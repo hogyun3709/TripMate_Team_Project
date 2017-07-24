@@ -7,6 +7,8 @@ end
 
 # front-end framework
 gem 'materialize-sass'
+# Add jquery
+gem 'jquery-rails'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.2'
