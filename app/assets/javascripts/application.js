@@ -12,6 +12,5 @@
 //
 //= require rails-ujs
 //= require jquery
-//= require jqurey_ujs
-//= require materialize-sass
+//= require materialize
 //= require_tree .
