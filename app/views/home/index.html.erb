@@ -27,13 +27,55 @@
     </ul>
   </div>
   <main>
-    <div class="frontdoor">
-      <h3>
-        Find your fellows
-      </h3>
+
+    <div id="main-background" class="parallax-container valign-wrapper">
+      <div class="row">
+
+        <div class="col xl12 l12 m12 s12 center-align">
+          <img id="ideathon_logo" class="responsive-img" src="http://www.practicallyperfectpa.com/wp-content/uploads/2017/07/TripMate-Getthere-Logo-1-1000x388.png" alt="Ideathon logo">
+        </div>
+        <div class="col xl12 l12 m12 s12 center-align">
+          <br>
+        </div>
+        <div class="col xl12 l12 m12 s12 center-align">
+          <a class="btn-large waves-effect waves-light" href="/posts">빠른 매칭</a>
+        </div>
+      </div>
     </div>
+
+    <div class="row">
+      <div id="empresas" class="col s10 centralize center">
+        <div class="col s12 m4 box-solution">
+          <div class="icon-block">
+            <span class="lnr lnr-camera-video circle blue lighten-2 white-text"></span>
+            <h5 class="center blue-text text-lighten-2 light">
+              Find your Character</h5>
+            <p class="grey-text text-darken-3 col s10 centralize">
+              자신의 역할을 결정하세요. 여행시 어떤역을해야될지 고민되셧죠? TripMate는 여행시 필요한 역할분담을 할수있도록 도와줍니다.</p>
+          </div>
+        </div>
+        <div class="col s12 m4 box-solution">
+          <div class="icon-block">
+            <span class="lnr lnr-magic-wand circle blue lighten-2 white-text"></span>
+            <h5 class="center blue-text text-lighten-2 light">Find your mates</h5>
+            <p class="grey-text text-darken-3 col s10 centralize">
+              자신과 코드가 맞는 여행친구를 찾아보세요. 가끔은 색다른친구들과 여행을떠나는것도 좋은경험이에요.</p>
+          </div>
+        </div>
+        <div class="col s12 m4 box-solution">
+          <div class="icon-block">
+            <span class="lnr lnr-rocket circle blue lighten-2 white-text"></span>
+            <h5 class="center blue-text text-lighten-2 light">MVP</h5>
+            <p class="grey-text text-darken-3 col s10 centralize">
+              이번여행의 MVP가 되어보세요. 모든사람들이 여행시 당신을 찾게될겁니다.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
     <div class="description">
-<!--First mark--->
+      <!--First mark--->
     <li class="first-desc1">
       <h6>당신의 부족함을 채워줄 메이트를 찾아드립니다</h6>
     </li>
@@ -48,56 +90,52 @@
   <div class="numview">
     <div class="row">
       <div class="col s12 m7">
-                <div class="card">
+        <div class="card">
           <%= image_tag("4.jpeg")%>
-            <span class="card-title">Card Title</span>
-          </div>
-          <div class="card-content">
-            <p>Tripmate를 통해...</p>
-          </div>
+          <span class="card-title">Card Title</span>
+        </div>
+        <div class="card-content">
+          <p>Tripmate를 통해...</p>
         </div>
       </div>
     </div>
-
   </div>
+
+</div>
 <!--trip and mvp--->
 
-  <div class="mvtp">
-    <div class="row">
-      <div class="col s12 m6">
-        <div class="card">
-          <div class="card-image">
-            <%= image_tag("1.jpg")%>
-            <span class="card-title">Card Title</span>
-            <a class="btn-floating halfway-fab waves-effect waves-light red">
-              <i class="material-icons">add</i>
-            </a>
-          </div>
-          <div class="card-content">
-            <p>이달의 Best Trip</p>
-          </div>
+<div class="mvtp">
+  <div class="row">
+    <div class="col s12 m6">
+      <div class="card">
+        <div class="card-image">
+          <%= image_tag("1.jpg")%>
+          <span class="card-title">Card Title</span>
+          <a class="btn-floating halfway-fab waves-effect waves-light red">
+            <i class="material-icons">add</i>
+          </a>
         </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col s12 m6">
-        <div class="card">
-          <div class="card-image">
-            <%= image_tag("2.jpg")%>
-            <span class="card-title">Card Title</span>
-            <a class="btn-floating halfway-fab waves-effect waves-light red">
-              <i class="material-icons">add</i>
-            </a>
-          </div>
-          <div class="card-content">
-            <p>이달의 MVP</p>
-          </div>
+        <div class="card-content">
+          <p>이달의 Best Trip</p>
         </div>
       </div>
     </div>
   </div>
 
-</main>
-<!--footer--->
-</html>
+  <div class="row">
+    <div class="col s12 m6">
+      <div class="card">
+        <div class="card-image">
+          <%= image_tag("2.jpg")%>
+          <span class="card-title">Card Title</span>
+          <a class="btn-floating halfway-fab waves-effect waves-light red">
+            <i class="material-icons">add</i>
+          </a>
+        </div>
+        <div class="card-content">
+          <p>이달의 MVP</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
