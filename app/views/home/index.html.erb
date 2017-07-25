@@ -1,2 +1,165 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+<html>
+<!--logo and nevigation--->
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#!" class="brand-logo">
+        <i class="material-icons">cloud</i>Logo</a>
+      <ul class="right hide-on-med-and-down">
+        <li>
+          <a href="sass.html">
+            <i class="material-icons">search</i>
+          </a>
+        </li>
+        <li>
+          <a href="badges.html">
+            <i class="material-icons">view_module</i>
+          </a>
+        </li>
+        <li>
+          <a href="collapsible.html">
+            <i class="material-icons">refresh</i>
+          </a>
+        </li>
+        <li>
+          <a href="mobile.html">
+            <i class="material-icons">more_vert</i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="fixed-action-btn horizontal click-to-toggle">
+    <a class="btn-floating btn-large red">
+      <i class="material-icons">menu</i>
+    </a>
+    <ul>
+      <li>
+        <a class="btn-floating red">
+          <i class="material-icons">insert_chart</i>
+        </a>
+      </li>
+      <li>
+        <a class="btn-floating yellow darken-1">
+          <i class="material-icons">format_quote</i>
+        </a>
+      </li>
+      <li>
+        <a class="btn-floating green">
+          <i class="material-icons">publish</i>
+        </a>
+      </li>
+      <li>
+        <a class="btn-floating blue">
+          <i class="material-icons">attach_file</i>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <main>
+    <div class="frontdoor">
+      <h3>
+        Find your fellows
+      </h3>
+    </div>
+    <div class="description">
+<!--First mark--->
+    <li class="first-desc1">
+      <h6>당신의 부족함을 채워줄 메이트를 찾아드립니다</h6>
+    </li>
+    <li class="first-desc2">
+      <h6>클릭한번으로 동료를 찾아드립니다</h6>
+    </li>
+    <li class="first-desc3">
+      <h6>이번여행의 MVP가 되어보세요</h6>
+    </li>
+  </div>
+
+  <div class="numview">
+    <div class="row">
+      <div class="col s12 m7">
+                <div class="card">
+          <%= image_tag("4.jpeg")%>
+            <span class="card-title">Card Title</span>
+          </div>
+          <div class="card-content">
+            <p>Tripmate를 통해...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+<!--trip and mvp--->
+
+  <div class="mvtp">
+    <div class="row">
+      <div class="col s12 m6">
+        <div class="card">
+          <div class="card-image">
+            <%= image_tag("1.jpg")%>
+            <span class="card-title">Card Title</span>
+            <a class="btn-floating halfway-fab waves-effect waves-light red">
+              <i class="material-icons">add</i>
+            </a>
+          </div>
+          <div class="card-content">
+            <p>이달의 Best Trip</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s12 m6">
+        <div class="card">
+          <div class="card-image">
+            <%= image_tag("2.jpg")%>
+            <span class="card-title">Card Title</span>
+            <a class="btn-floating halfway-fab waves-effect waves-light red">
+              <i class="material-icons">add</i>
+            </a>
+          </div>
+          <div class="card-content">
+            <p>이달의 MVP</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</main>
+<!--footer--->
+<footer class="page-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col l6 s12">
+        <h5 class="white-text">Footer Content</h5>
+        <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+      </div>
+      <div class="col l4 offset-l2 s12">
+        <h5 class="white-text">Links</h5>
+        <ul>
+          <li>
+            <a class="grey-text text-lighten-3" href="#!">Link 1</a>
+          </li>
+          <li>
+            <a class="grey-text text-lighten-3" href="#!">Link 2</a>
+          </li>
+          <li>
+            <a class="grey-text text-lighten-3" href="#!">Link 3</a>
+          </li>
+          <li>
+            <a class="grey-text text-lighten-3" href="#!">Link 4</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <div class="container">
+      © 2014 Copyright Text
+      <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+    </div>
+  </div>
+</footer>
+</html>
