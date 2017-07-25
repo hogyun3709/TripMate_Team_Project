@@ -1,9 +1,9 @@
 <html>
-<!--logo and nevigation--->
+  <!--logo and nevigation--->
   <nav>
     <div class="nav-wrapper">
       <a href="#!" class="brand-logo">
-        <i class="material-icons">cloud</i>Logo</a>
+        <i class="material-icons">train</i>TripMate</a>
       <ul class="right hide-on-med-and-down">
         <li>
           <a href="sass.html">
@@ -28,6 +28,7 @@
       </ul>
     </div>
   </nav>
+
   <div class="fixed-action-btn horizontal click-to-toggle">
     <a class="btn-floating btn-large red">
       <i class="material-icons">menu</i>
@@ -56,13 +57,55 @@
     </ul>
   </div>
   <main>
-    <div class="frontdoor">
-      <h3>
-        Find your fellows
-      </h3>
+
+    <div id="main-background" class="parallax-container valign-wrapper">
+      <div class="row">
+
+        <div class="col xl12 l12 m12 s12 center-align">
+          <img id="ideathon_logo" class="responsive-img" src="http://www.practicallyperfectpa.com/wp-content/uploads/2017/07/TripMate-Getthere-Logo-1-1000x388.png" alt="Ideathon logo">
+        </div>
+        <div class="col xl12 l12 m12 s12 center-align">
+          <br>
+        </div>
+        <div class="col xl12 l12 m12 s12 center-align">
+          <a class="btn-large waves-effect waves-light" href="/posts">빠른 매칭</a>
+        </div>
+      </div>
     </div>
+
+    <div class="row">
+      <div id="empresas" class="col s10 centralize center">
+        <div class="col s12 m4 box-solution">
+          <div class="icon-block">
+            <span class="lnr lnr-camera-video circle blue lighten-2 white-text"></span>
+            <h5 class="center blue-text text-lighten-2 light">
+              Find your Character</h5>
+            <p class="grey-text text-darken-3 col s10 centralize">
+              자신의 역할을 결정하세요. 여행시 어떤역을해야될지 고민되셧죠? TripMate는 여행시 필요한 역할분담을 할수있도록 도와줍니다.</p>
+          </div>
+        </div>
+        <div class="col s12 m4 box-solution">
+          <div class="icon-block">
+            <span class="lnr lnr-magic-wand circle blue lighten-2 white-text"></span>
+            <h5 class="center blue-text text-lighten-2 light">Find your mates</h5>
+            <p class="grey-text text-darken-3 col s10 centralize">
+              자신과 코드가 맞는 여행친구를 찾아보세요. 가끔은 색다른친구들과 여행을떠나는것도 좋은경험이에요.</p>
+          </div>
+        </div>
+        <div class="col s12 m4 box-solution">
+          <div class="icon-block">
+            <span class="lnr lnr-rocket circle blue lighten-2 white-text"></span>
+            <h5 class="center blue-text text-lighten-2 light">MVP</h5>
+            <p class="grey-text text-darken-3 col s10 centralize">
+              이번여행의 MVP가 되어보세요. 모든사람들이 여행시 당신을 찾게될겁니다.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
     <div class="description">
-<!--First mark--->
+      <!--First mark--->
     <li class="first-desc1">
       <h6>당신의 부족함을 채워줄 메이트를 찾아드립니다</h6>
     </li>
@@ -77,89 +120,128 @@
   <div class="numview">
     <div class="row">
       <div class="col s12 m7">
-                <div class="card">
+        <div class="card">
           <%= image_tag("4.jpeg")%>
-            <span class="card-title">Card Title</span>
-          </div>
-          <div class="card-content">
-            <p>Tripmate를 통해...</p>
-          </div>
+          <span class="card-title">Card Title</span>
+        </div>
+        <div class="card-content">
+          <p>Tripmate를 통해...</p>
         </div>
       </div>
     </div>
-
   </div>
+
+</div>
 <!--trip and mvp--->
 
-  <div class="mvtp">
-    <div class="row">
-      <div class="col s12 m6">
-        <div class="card">
-          <div class="card-image">
-            <%= image_tag("1.jpg")%>
-            <span class="card-title">Card Title</span>
-            <a class="btn-floating halfway-fab waves-effect waves-light red">
-              <i class="material-icons">add</i>
-            </a>
-          </div>
-          <div class="card-content">
-            <p>이달의 Best Trip</p>
-          </div>
+<div class="mvtp">
+  <div class="row">
+    <div class="col s12 m6">
+      <div class="card">
+        <div class="card-image">
+          <%= image_tag("1.jpg")%>
+          <span class="card-title">Card Title</span>
+          <a class="btn-floating halfway-fab waves-effect waves-light red">
+            <i class="material-icons">add</i>
+          </a>
         </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col s12 m6">
-        <div class="card">
-          <div class="card-image">
-            <%= image_tag("2.jpg")%>
-            <span class="card-title">Card Title</span>
-            <a class="btn-floating halfway-fab waves-effect waves-light red">
-              <i class="material-icons">add</i>
-            </a>
-          </div>
-          <div class="card-content">
-            <p>이달의 MVP</p>
-          </div>
+        <div class="card-content">
+          <p>이달의 Best Trip</p>
         </div>
       </div>
     </div>
   </div>
 
-</main>
-<!--footer--->
-<footer class="page-footer">
+  <div class="row">
+    <div class="col s12 m6">
+      <div class="card">
+        <div class="card-image">
+          <%= image_tag("2.jpg")%>
+          <span class="card-title">Card Title</span>
+          <a class="btn-floating halfway-fab waves-effect waves-light red">
+            <i class="material-icons">add</i>
+          </a>
+        </div>
+        <div class="card-content">
+          <p>이달의 MVP</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section id="apply" class="hero-fullwidth" data-overlay-dark="7">
+  <div class="background-image parallax-apply" style="background-image: url(&quot;/assets/About-8cbc930548eeb4bea8aa8852ab1526e3cb670f4bce5c86a91609afec78715f7d.jpg&quot;); opacity: 1;">
+    <img src="/assets/About-8cbc930548eeb4bea8aa8852ab1526e3cb670f4bce5c86a91609afec78715f7d.jpg" alt="About">
+
+  </div>
   <div class="container">
     <div class="row">
-      <div class="col l6 s12">
-        <h5 class="white-text">Footer Content</h5>
-        <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
-      </div>
-      <div class="col l4 offset-l2 s12">
-        <h5 class="white-text">Links</h5>
-        <ul>
-          <li>
-            <a class="grey-text text-lighten-3" href="#!">Link 1</a>
-          </li>
-          <li>
-            <a class="grey-text text-lighten-3" href="#!">Link 2</a>
-          </li>
-          <li>
-            <a class="grey-text text-lighten-3" href="#!">Link 3</a>
-          </li>
-          <li>
-            <a class="grey-text text-lighten-3" href="#!">Link 4</a>
-          </li>
-        </ul>
+      <div class="col-md-12 text-center">
+        <h2>Interested in
+          <strong>
+            <span class="color">Trip Mate</span>
+          </strong>?</h2>
+        <p class="lead">
+          <strong>
+            <span class="color">Trip Mate</span>
+          </strong>
+          는 성향,성격등을 통해 자동으로 여행친구를 매칭시켜줍니다.<br>
+          You can apply in either
+          <strong>
+            <span class="color">English</span>
+          </strong>
+          or
+          <strong>
+            <span class="color">Korean</span>
+          </strong>.<br>
+          <a href="https://docs.google.com/a/likelion.org/forms/d/e/1FAIpQLSdqlnFL5mR3neeW4Fl-lV76_DwP2agHWqWZdbWuiTcAu1LN5Q/viewform?c=0&amp;w=1" class="btn btn-md btn-primary btn-appear mt30" target="_blank">
+            <span style="font-size: 25px">Apply Now (ENG)</span>
+          </a><br>
+          <br>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSf_RU1rAPaf2iZIagtLBaekWUFdoHU8YKTMIjWjcH-zOu2bsw/viewform?c=0&amp;w=1" class="btn btn-md btn-primary btn-appear mt30" target="_blank">
+            <span style="font-size: 25px">Apply Now (KOR)</span>
+          </a>
+        </p>
       </div>
     </div>
   </div>
-  <div class="footer-copyright">
-    <div class="container">
-      © 2014 Copyright Text
-      <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+</section>
+
+</main>
+
+<!--footer--->
+<footer class="page-footer">
+<div class="container">
+  <div class="row">
+    <div class="col l6 s12">
+      <h5 class="white-text">Footer Content</h5>
+      <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+    </div>
+    <div class="col l4 offset-l2 s12">
+      <h5 class="white-text">Links</h5>
+      <ul>
+        <li>
+          <a class="grey-text text-lighten-3" href="#!">Link 1</a>
+        </li>
+        <li>
+          <a class="grey-text text-lighten-3" href="#!">Link 2</a>
+        </li>
+        <li>
+          <a class="grey-text text-lighten-3" href="#!">Link 3</a>
+        </li>
+        <li>
+          <a class="grey-text text-lighten-3" href="#!">Link 4</a>
+        </li>
+      </ul>
     </div>
   </div>
+</div>
+<div class="footer-copyright">
+  <div class="container">
+    © 2014 Copyright Text
+    <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+  </div>
+</div>
 </footer>
 </html>
