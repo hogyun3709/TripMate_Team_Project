@@ -29,10 +29,7 @@
   </div>
   <main>
 <!--동영상재생-->
-    <video width="320" height="240" controls="automatically">
-      <source src="assets/media/TM.mp4"/>
- Your browser does not support the video tag.
-</video>
+    <%= video_tag("tm.mp4", size: "250x250", controls: true, autobuffer: true )%>
 <!--트립메이트 로고-->
     <div id="main-background" class="parallax-container valign-wrapper">
       <div class="row">
@@ -76,6 +73,8 @@
         <div class="col s12 m4 box-solution">
           <div class="icon-block">
             <span class="lnr lnr-rocket circle blue lighten-2 white-text"></span>
+            <img id="ideathon_logo" class="responsive-img" src="https://previews.123rf.com/images/deskcube/deskcube1508/deskcube150800093/43475654-Trabajo-en-equipo-Gente-logotipo-Imagen-de-cinco-personas-Foto-de-archivo.jpg" alt="Ideathon logo"height="200" width="200">
+          </div>
             <h5 class="center blue-text text-lighten-2 light">MVP</h5>
             <p class="grey-text text-darken-3 col s10 centralize">
               이번여행의 MVP가 되어보세요. 모든사람들이 여행시 당신을 찾게될겁니다.</p>
