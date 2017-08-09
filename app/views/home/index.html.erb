@@ -1,138 +1,145 @@
 <html>
-<!--매뉴바-->
-  <div class="fixed-action-btn horizontal click-to-toggle">
-    <a class="btn-floating btn-large red">
-      <i class="material-icons">menu</i>
-    </a>
-    <ul>
-      <li>
-        <a class="btn-floating red">
-          <i class="material-icons">insert_chart</i>
+    <!--매뉴바-->
+    <div class="fixed-action-btn horizontal click-to-toggle">
+        <a class="btn-floating btn-large red">
+            <i class="material-icons">menu</i>
         </a>
-      </li>
-      <li>
-        <a class="btn-floating yellow darken-1">
-          <i class="material-icons">format_quote</i>
-        </a>
-      </li>
-      <li>
-        <a class="btn-floating green">
-          <i class="material-icons">publish</i>
-        </a>
-      </li>
-      <li>
-        <a class="btn-floating blue">
-          <i class="material-icons">attach_file</i>
-        </a>
-      </li>
-    </ul>
-  </div>
-  <main>
-<!--동영상재생-->
-    <%= video_tag("tm.mp4", size: "250x250", controls: true, autobuffer: true )%>
-<!--트립메이트 로고-->
-    <div id="main-background" class="parallax-container valign-wrapper">
-      <div class="row">
+        <ul>
+            <li>
+                <a class="btn-floating red">
+                    <i class="material-icons">insert_chart</i>
+                </a>
+            </li>
+            <li>
+                <a class="btn-floating yellow darken-1">
+                    <i class="material-icons">format_quote</i>
+                </a>
+            </li>
+            <li>
+                <a class="btn-floating green">
+                    <i class="material-icons">publish</i>
+                </a>
+            </li>
+            <li>
+                <a class="btn-floating blue">
+                    <i class="material-icons">attach_file</i>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <main>
+        <!--동영상재생-->
+        <%= video_tag("tm.mp4", size: "250x250", controls: true, autobuffer: true )%>
+        <!--트립메이트 로고-->
+        <div id="main-background" class="parallax-container valign-wrapper">
+            <div class="row">
 
-        <div class="col xl12 l12 m12 s12 center-align">
-          <img id="ideathon_logo" class="responsive-img" src="http://www.practicallyperfectpa.com/wp-content/uploads/2017/07/TripMate-Getthere-Logo-1-1000x388.png" alt="Ideathon logo">
+                <div class="col xl12 l12 m12 s12 center-align">
+                    <img id="ideathon_logo" class="responsive-img" src="http://www.practicallyperfectpa.com/wp-content/uploads/2017/07/TripMate-Getthere-Logo-1-1000x388.png" alt="Ideathon logo">
+                </div>
+                <div class="col xl12 l12 m12 s12 center-align">
+                    <br>
+                </div>
+                <div class="col xl12 l12 m12 s12 center-align">
+                    <a class="btn-large waves-effect waves-light" href="/posts">빠른 매칭</a>
+                </div>
+            </div>
         </div>
-        <div class="col xl12 l12 m12 s12 center-align">
-          <br>
+
+        <!---트립메이트의 3가지특성-------->
+        <div class="row">
+            <div id="empresas" class="col s10 centralize center">
+                <div class="col s12 m4 box-solution">
+                    <div class="icon-block">
+                        <span class="lnr lnr-camera-video circle blue lighten-2 white-text"></span>
+                        <img id="ideathon_logo" class="responsive-img" src="http://brainpersonalityconnection.com/images/Logo.jpg" alt="Ideathon logo" height="200" width="200">
+                        <h5 class="center blue-text text-lighten-2 light">
+                            Find your Character</h5>
+                        <p class="grey-text text-darken-3 col s10 centralize">
+                            자신의 역할을 결정하세요. 여행시 어떤역을해야될지 고민되셧죠? TripMate는 여행시 필요한 역할분담을 할수있도록 도와줍니다.</p>
+                    </div>
+                </div>
+                <div class="col s12 m4 box-solution">
+                    <div class="icon-block">
+                        <span class="lnr lnr-magic-wand circle blue lighten-2 white-text"></span>
+                        <img
+                            id="ideathon_logo"
+                            class="responsive-img"
+                            src="https://previews.123rf.com/images/deskcube/deskcube1508/deskcube150800093/43475654-Trabajo-en-equipo-Gente-logotipo-Imagen-de-cinco-personas-Foto-de-archivo.jpg"
+                            alt="Ideathon logo"
+                            height="200"
+                            width="200">
+                    </div>
+                    <h5 class="center blue-text text-lighten-2 light">Find your mates</h5>
+                    <p class="grey-text text-darken-3 col s10 centralize">
+                        자신과 코드가 맞는 여행친구를 찾아보세요. 가끔은 색다른친구들과 여행을떠나는것도 좋은경험이에요.</p>
+                </div>
+            </div>
+            <div class="col s12 m4 box-solution">
+                <div class="icon-block">
+                    <span class="lnr lnr-rocket circle blue lighten-2 white-text"></span>
+                    <img
+                        id="ideathon_logo"
+                        class="responsive-img"
+                        src="https://previews.123rf.com/images/deskcube/deskcube1508/deskcube150800093/43475654-Trabajo-en-equipo-Gente-logotipo-Imagen-de-cinco-personas-Foto-de-archivo.jpg"
+                        alt="Ideathon logo"
+                        height="200"
+                        width="200">
+                </div>
+                <h5 class="center blue-text text-lighten-2 light">MVP</h5>
+                <p class="grey-text text-darken-3 col s10 centralize">
+                    이번여행의 MVP가 되어보세요. 모든사람들이 여행시 당신을 찾게될겁니다.</p>
+            </div>
         </div>
-        <div class="col xl12 l12 m12 s12 center-align">
-          <a class="btn-large waves-effect waves-light" href="/posts">빠른 매칭</a>
-        </div>
-      </div>
     </div>
 
+</div>
 
-<!---트립메이트의 3가지특성-------->
+<div class="numview">
     <div class="row">
-      <div id="empresas" class="col s10 centralize center">
-        <div class="col s12 m4 box-solution">
-          <div class="icon-block">
-            <span class="lnr lnr-camera-video circle blue lighten-2 white-text"></span>
-            <img id="ideathon_logo" class="responsive-img" src="http://brainpersonalityconnection.com/images/Logo.jpg" alt="Ideathon logo" height="200" width="200">
-            <h5 class="center blue-text text-lighten-2 light">
-              Find your Character</h5>
-            <p class="grey-text text-darken-3 col s10 centralize">
-              자신의 역할을 결정하세요. 여행시 어떤역을해야될지 고민되셧죠? TripMate는 여행시 필요한 역할분담을 할수있도록 도와줍니다.</p>
-          </div>
+        <div class="col s12 m7">
+            <div class="card">
+                <%= image_tag("4.jpeg")%>
+                <span class="card-title">Card Title</span>
+            </div>
+            <div class="card-content">
+                <p>Tripmate를 통해...</p>
+            </div>
         </div>
-        <div class="col s12 m4 box-solution">
-          <div class="icon-block">
-            <span class="lnr lnr-magic-wand circle blue lighten-2 white-text"></span>
-            <img id="ideathon_logo" class="responsive-img" src="https://previews.123rf.com/images/deskcube/deskcube1508/deskcube150800093/43475654-Trabajo-en-equipo-Gente-logotipo-Imagen-de-cinco-personas-Foto-de-archivo.jpg" alt="Ideathon logo"height="200" width="200">
-          </div>
-            <h5 class="center blue-text text-lighten-2 light">Find your mates</h5>
-            <p class="grey-text text-darken-3 col s10 centralize">
-              자신과 코드가 맞는 여행친구를 찾아보세요. 가끔은 색다른친구들과 여행을떠나는것도 좋은경험이에요.</p>
-          </div>
-        </div>
-        <div class="col s12 m4 box-solution">
-          <div class="icon-block">
-            <span class="lnr lnr-rocket circle blue lighten-2 white-text"></span>
-            <img id="ideathon_logo" class="responsive-img" src="https://previews.123rf.com/images/deskcube/deskcube1508/deskcube150800093/43475654-Trabajo-en-equipo-Gente-logotipo-Imagen-de-cinco-personas-Foto-de-archivo.jpg" alt="Ideathon logo"height="200" width="200">
-          </div>
-            <h5 class="center blue-text text-lighten-2 light">MVP</h5>
-            <p class="grey-text text-darken-3 col s10 centralize">
-              이번여행의 MVP가 되어보세요. 모든사람들이 여행시 당신을 찾게될겁니다.</p>
-          </div>
-        </div>
-      </div>
-
     </div>
-
-  <div class="numview">
-    <div class="row">
-      <div class="col s12 m7">
-        <div class="card">
-          <%= image_tag("4.jpeg")%>
-          <span class="card-title">Card Title</span>
-        </div>
-        <div class="card-content">
-          <p>Tripmate를 통해...</p>
-        </div>
-      </div>
-    </div>
-  </div>
+</div>
 
 </div>
 <!--트립메이트 방문자수,매칭수,트립수 체크기능--->
-
-<div class="mvtp">
+<div class="container">
   <div class="row">
-    <div class="col s12 m6">
-      <div class="card">
-        <div class="card-image">
-          <%= image_tag("1.jpg")%>
-          <span class="card-title">Card Title</span>
-          <a class="btn-floating halfway-fab waves-effect waves-light red">
-            <i class="material-icons">add</i>
-          </a>
+    <div class="col s6">
+        <div class="card">
+            <div class="card-image">
+                <%= image_tag('1.jpg', class:"responsive-img") %>
+                <span class="card-title">Card Title</span>
+            </div>
+            <div class="card-content">
+                <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+            </div>
+            <div class="card-action">
+                <a href="#">This is a link</a>
+            </div>
         </div>
-        <div class="card-content">
-          <p>이달의 Best Trip</p>
-        </div>
-      </div>
     </div>
-  </div>
-
-  <div class="row">
-    <div class="col s12 m6">
-      <div class="card">
-        <div class="card-image">
-          <%= image_tag("2.jpg")%>
-          <span class="card-title">Card Title</span>
-          <a class="btn-floating halfway-fab waves-effect waves-light red">
-            <i class="material-icons">add</i>
-          </a>
+    <div class="col s6">
+        <div class="card">
+            <div class="card-image">
+                <%= image_tag('2.jpg', class:"responsive-img") %>
+                <span class="card-title">Card Title</span>
+            </div>
+            <div class="card-content">
+                <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+            </div>
+            <div class="card-action">
+                <a href="#">This is a link</a>
+            </div>
         </div>
-        <div class="card-content">
-          <p>이달의 MVP</p>
-        </div>
-      </div>
     </div>
   </div>
 </div>
