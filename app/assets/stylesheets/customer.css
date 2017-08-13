@@ -1,0 +1,15 @@
+.p3 {
+  border-radius: 40px;
+
+}
+
+.line {
+  position: absolute;
+  margin-left: 0.5rem;
+  height: 20.5vw;
+    vertical-align: middle;
+}
+
+.tripmate-intro {
+  font-family: 'Sedgwick Ave', serif;;
+}

@@ -1,6 +1,21 @@
 <html>
+  <head>
+    <head>
+    <style>
+@import url('https://fonts.googleapis.com/css?family=Sedgwick+Ave');
+    /***** Hover Effect *****/
+    .hoverEffect { float:left; position:relative; width: 500px; height:300px; margin:30px; overflow:hidden; border-radius: 30px;}
+    .hoverEffect .image { display:block; opacity:1; position:relative; transform:scale(1.2); transition:0.5s ease; max-width: 100%; max-height: 100%;}
+    .hoverEffect:hover>.image { transform:scale(1); filter: blur(5px); opacity:0.3; max-width: 100%; max-height: 100%;}
+    .hoverEffect .txt {color:black; font-size:20px; top:50%; left:50%; text-align:center; line-height:20px; position:absolute; top:0; left:0; height:100%; width: 100%; background:rgba(195,193,149,0); opacity:0; overflow:hidden; transform:scale(2); transition:0.3s ease; }
+    .hoverEffect:hover .txt { background:rgba(195,193,149,0.5); transform:scale(1); opacity:1;}
+    .hoverEffect .txt h3 { font-size:30px; margin:120px 0 10px 0; }
+    </style>
+    </head>
+  </head>
+  <body>
     <!--매뉴바-->
-    <div class="fixed-action-btn horizontal click-to-toggle">
+      <div class="fixed-action-btn horizontal click-to-toggle">
         <a class="btn-floating btn-large red">
             <i class="material-icons">menu</i>
         </a>
@@ -95,20 +110,28 @@
 
 </div>
 
-<div class="numview">
-    <div class="row">
-        <div class="col s12 m7">
-            <div class="card">
-                <%= image_tag("4.jpeg")%>
-                <span class="card-title">Card Title</span>
-            </div>
-            <div class="card-content">
-                <p>Tripmate를 통해...</p>
-            </div>
-        </div>
-    </div>
-</div>
 
+<div class="container">
+      <h2 class="tripmate-intro"><strong>Tripmate</strong>를 통해서...</h2>
+      <section class="hoverEffect">
+      	<img src="https://aos.iacpublishinglabs.com/question/aq/700px-394px/many-people-missing-year_8e9fc97c68b730f4.jpg?domain=cx.aos.ask.com" alt="how-many" class="image">
+      	<div class="txt"><h3>@@명의</h3>분들이</div>
+      </section>
+      <section class="hoverEffect">
+      	<img src="http://laraveldaily.com/wp-content/uploads/2017/01/where_word.gif" alt="where" class="image">
+      	<div class="txt"><h3>전국각지,해외에서</h3></div>
+      </section>
+      <section class="hoverEffect">
+      	<img src="http://www.rd.com/wp-content/uploads/sites/2/2016/02/02-friends-make-you-more-attractive.jpg" alt="friends" class="image">
+      	<div class="txt"><h3>아름다운 인연</h3>을 만드셨습니다# 그리고 만들고 있습니다.</div>
+      </section>
+      <section class="hoverEffect">
+      	<img src="https://static.guideadvisor.com/wp-content/uploads/thumb-cache/Time-to-Travel-85d3dedafa29a09e471c7eae279c21cb-840x545-85-nocrop.jpg" alt="time-to-travel" class="image">
+      	<div class="txt"><h3>이제</h3>당신이 주인공입니다!</div>
+      </section>
+
+    </div>
+  </div>
 </div>
 <!--트립메이트 방문자수,매칭수,트립수 체크기능--->
 <div class="container">
@@ -143,3 +166,4 @@
     </div>
   </div>
 </div>
+</body>
