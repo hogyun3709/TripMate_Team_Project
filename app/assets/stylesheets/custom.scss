@@ -4,5 +4,53 @@ img.responsive-img {
 }
 
 .part1 {
-  
+
+}
+
+//Chanhee
+
+#video-container
+{
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+  position: relative;
+}
+
+video{
+  min-width: 100%;
+  min-height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.content
+{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1000px;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+
+.content h1
+{
+  font-family: arial;
+  font-size: 3em;
+  margin: 10px 0;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.content p
+{
+  font-family: arial;
+  font-size: .9em;
+  margin: 10px 0;
+  color: #000;
 }
