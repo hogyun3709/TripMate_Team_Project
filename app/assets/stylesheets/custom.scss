@@ -42,24 +42,29 @@ video{
 
 .content h1
 {
+  min-width: 100%;
+  min-height: 100%;
   font-family: arial;
   font-size: 4em;
   margin: 10px 0;
   color: #fff;
+  text-align: center;
   text-transform: uppercase;
 }
 
 .content p
 {
+  min-width: 100%;
+  min-height: 100%;
   font-family: arial;
   font-size: .9em;
   margin: 10px 0;
   color: #fff;
+  text-align: center;
 }
-section h1
-{
+.sow-headline{
   font-family: arial;
-  font-size: 4em;
+  font-size: 2em;
   margin: 10px 0;
   color: #000;
   text-align: center;

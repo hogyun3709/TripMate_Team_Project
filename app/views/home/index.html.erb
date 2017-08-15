@@ -2,6 +2,7 @@
     <head>
         <head>
             <style>
+            <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
                 @import url( 'https://fonts.googleapis.com/css?family=Sedgwick+Ave');
 
                 /***** Hover Effect *****/
@@ -13,56 +14,61 @@
     </head>
     <body>
 
-        <!--동영상재생-->
-        <div id="video-container">
-        <%= video_tag "Boat - 1193.mp4", :size => "320x240", :controls => true, :autobuffer => true, autoplay: :autoplay, loop: :loop%>
-        </div>
-        <div class="content">
-            <h1>Find your mates, Trip Mates</h1>
-            <p>Find your character, find your mates, find your goal and become MVP of the trip</p>
-        </div>
+      <!--동영상재생-->
+       <div id="video-container">
+       <%= video_tag "Boat - 1193.mp4", :controls => true, :autobuffer => true, autoplay: :autoplay, loop: :loop%>
+       </div>
+       <div class="content">
+           <h1>Find your mates, Trip Mates</h1>
+           <p>Find your character, find your mates, find your goal and become MVP of the trip</p>
+       </div>
+       <br></br>
+       <br></br>
 
-        <section>
-          <h1>당신의 Trip을 위한 이상적인 솔루션
-          <br></br></h1>
-        </section>
-        <!---트립메이트의 3가지특성-------->
-        <div class="row">
-            <div id="charoftm" class="col s12 centralize center">
+       <div class="so-widget-sow-headline so-widget-sow-headline-default-0f5a0189729b">
+         <div class="sow-headline-container ">
+           <h1 class="sow-headline">
+             <b>ABOUT</b> US</h1>
+           </div>
+         </div>
+         <br></br>
 
-                <div class="col s12 m4 box-solution">
-                    <div class="icon-block">
-                        <span class="lnr lnr-camera-video circle blue lighten-2 white-text"></span>
-                        <img id="character-logo" class="responsive-img" src="http://brainpersonalityconnection.com/images/Logo.jpg" alt="Ideathon logo" height="200" width="200">
-                        <h5 class="center blue-text text-lighten-2 light">
-                            Find your Character</h5>
-                        <p class="grey-text text-darken-3 col s10 centralize">
-                            자신의 역할을 결정하세요. 여행시 어떤역을해야될지 고민되셧죠? TripMate는 여행시 필요한 역할분담을 할수있도록 도와줍니다.</p>
-                    </div>
-                </div>
+       <!---트립메이트의 3가지특성-------->
+       <div class="row">
+           <div id="charoftm" class="col s12 centralize center">
 
-                <div class="col s12 m4 box-solution">
-                    <div class="icon-block">
-                        <span class="lnr lnr-magic-wand circle blue lighten-2 white-text"></span>
-                        <img id="ideathon_logo" class="responsive-img" src="http://makemoneypolicy.com/wp-content/uploads/2017/05/Winning-Logo-Design-Tips.png" alt="Mate-logo" height="200" width="200">
-                    </div>
-                    <h5 class="center blue-text text-lighten-2 light">
-                        Find your mates</h5>
-                    <p class="grey-text text-darken-3 col s10 centralize">
-                        자신과 코드가 맞는 여행친구를 찾아보세요. 가끔은 색다른친구들과 여행을떠나는것도 좋은경험이에요.</p>
-                </div>
-                <div class="col s9 m4 box-solution">
-                    <div class="icon-block">
-                        <span class="lnr lnr-rocket circle blue lighten-2 white-text"></span>
-                        <img id="ideathon_logo" class="responsive-img" src="https://community.rebirthro.com/uploads/monthly_2017_01/unnamed.png.aaa33dfbf0c4b26f88f5ef18319cb194.png" alt="Mvp-logo" height="200" width="200">
-                    </div>
-                    <h5 class="center blue-text text-lighten-2 light">MVP</h5>
-                    <p class="grey-text text-darken-3 col s10 centralize">
-                        이번여행의 MVP가 되어보세요. 모든사람들이 여행시 당신을 찾게될겁니다.</p>
-                </div>
-            </div>
-        </div>
-    </div>
+               <div class="col s12 m4 box-solution">
+                   <div class="icon-block">
+                       <span class="lnr lnr-camera-video circle blue lighten-2 white-text"></span>
+                       <i class="large material-icons">flash_on</i>
+                       <h5 class="center blue-text text-lighten-2 light">
+                           Find your Character</h5>
+                       <p class="grey-text text-darken-3 col s10 centralize">
+                           자신의 역할을 결정하세요. 여행시 어떤역을해야될지 고민되셧죠? TripMate는 여행시 필요한 역할분담을 할수있도록 도와줍니다.</p>
+                   </div>
+               </div>
+
+               <div class="col s12 m4 box-solution">
+                   <div class="icon-block">
+                       <span class="lnr lnr-magic-wand circle blue lighten-2 white-text"></span>
+                       <i class="large material-icons">supervisor_account</i>
+                   <h5 class="center blue-text text-lighten-2 light">
+                       Find your mates</h5>
+                   <p class="grey-text text-darken-3 col s10 centralize">
+                       자신과 코드가 맞는 여행친구를 찾아보세요. 가끔은 색다른친구들과 여행을떠나는것도 좋은경험이에요.</p>
+               </div>
+             </div>
+               <div class="col s9 m4 box-solution">
+                   <div class="icon-block">
+                       <span class="lnr lnr-rocket circle blue lighten-2 white-text"></span>
+                       <i class="large material-icons">thumb_up</i>
+                   <h5 class="center blue-text text-lighten-2 light">Find your MVP</h5>
+                   <p class="grey-text text-darken-3 col s10 centralize">
+                       이번여행의 MVP가 되어보세요. 모든사람들이 여행시 당신을 찾게될겁니다.</p>
+               </div>
+           </div>
+       </div>
+   </div>
 </div>
 <div class="parallax-container">
   <div class="parallax"><img src="https://upload.wikimedia.org/wikipedia/commons/a/ac/Lanikai_2009_wide.jpg" alt="Unsplashed background img 2" style="bottom: autofocus; display: block;">></div>
