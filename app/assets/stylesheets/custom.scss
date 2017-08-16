@@ -3,10 +3,20 @@ img.responsive-img {
   height: 300px;
 }
 
-.part1 {
 
+#head-main {
+  position: relative;
 }
-
+.full-container {
+  width: 100%;
+  height: auto;
+}
+.s-wrap {
+  position: relative;;
+  z-index: 1;
+  overflow: hidden;
+  background-color: rgba(0,0,0,0.7);
+}
 //Chanhee
 
 #video-container
@@ -68,4 +78,9 @@ video{
   margin: 10px 0;
   color: #000;
   text-align: center;
+}
+
+
+.empty-spacing{
+  padding-bottom: 50px;
 }
