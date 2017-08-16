@@ -11,12 +11,7 @@ img.responsive-img {
   width: 100%;
   height: auto;
 }
-.s-wrap {
-  position: relative;;
-  z-index: 1;
-  overflow: hidden;
-  background-color: rgba(0,0,0,0.7);
-}
+
 //Chanhee
 
 #video-container
@@ -92,4 +87,7 @@ video{
   bottom: 0;
   height: 100%;
   width: 100%;
+}
+.wd100 {
+  width:100%;
 }
