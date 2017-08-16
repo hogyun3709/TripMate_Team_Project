@@ -84,3 +84,12 @@ video{
 .empty-spacing{
   padding-bottom: 50px;
 }
+
+#overlay {
+  position: relative;;
+  background-color: rgba(0, 0, 0, 0.3);
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+}
