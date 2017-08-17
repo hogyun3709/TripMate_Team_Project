@@ -23,6 +23,7 @@ class DeviseCreateUsers < ActiveRecord::Migration[5.1]
 
       t.string :name, null: false
       t.string :major, null: false
+      t.string :address, null: false
 
       ## Confirmable
       t.string   :confirmation_token
@@ -38,7 +39,7 @@ class DeviseCreateUsers < ActiveRecord::Migration[5.1]
 
       t.timestamps null: false
     end
-
+    add_column :users, :birthday, :datetime
     add_index :users, :email,                unique: true
     add_index :users, :reset_password_token, unique: true
     # add_index :users, :confirmation_token,   unique: true
