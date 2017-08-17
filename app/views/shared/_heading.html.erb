@@ -19,10 +19,10 @@
             <i class="material-icons">refresh</i>
           </a>
         </li>
-        <li>
-          <a href="mobile.html">
-            <i class="material-icons">more_vert</i>
-          </a>
+        <li class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="로그인">
+          <%= link_to new_user_session_path do %>
+            <i class="material-icons">lock</i>
+          <% end %>
         </li>
       </ul>
     </div>
