@@ -14,10 +14,10 @@
             <i class="material-icons">view_module</i>
           </a>
         </li>
-        <li>
-          <a href="collapsible.html">
-            <i class="material-icons">refresh</i>
-          </a>
+        <li class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="회원가입">
+          <%= link_to new_user_registration_path do %>
+            <i class="material-icons">perm_identity</i>
+          <% end %>
         </li>
         <li class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="로그인">
           <%= link_to new_user_session_path do %>
