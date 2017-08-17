@@ -16,9 +16,14 @@
           <%= f.text_field :name %>
         </div>
         <div class="input-field">
-          <i class="material-icons prefix">description</i>
-          <%= f.label :major, '전공' %>
-          <%= f.text_field :major %>
+          <i class="material-icons prefix">add_location</i>
+          <%= f.label :address, '주소' %>
+          <%= f.text_field :address %>
+        </div>
+        <div class="input-field">
+          <i class="material-icons prefix">add_location</i>
+          <%= f.label :birthday, '생년월일' %>
+          <%= f.date_select :birthday %>
         </div>
         <br>
         <div class="input-field">
