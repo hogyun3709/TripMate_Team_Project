@@ -15,12 +15,13 @@
         <div id="head-main">
             <!--동영상재생-->
             <div id="video-container">
-                <%= video_tag "Boat - 1193.mp4", :controls => true, :autobuffer => true, autoplay: :autoplay, loop: :loop%>
+                <%= video_tag "tripmm.mp4", :controls => true, :autobuffer => true, autoplay: :autoplay, loop: :loop, muted: true%>
             </div>
             <div class="content">
-                <h1>Find your mates, Trip Mates</h1>
-                <p>Find your character, find your mates, find your goal and become MVP of the trip</p>
+                <h1><span class="card-title">여행이 떠나고싶을땐 TripMates</span></h1>
+                <p>여행시 복잡한 역할분담, 싹 해결해드려요</p>
             </div>
+
             <!--여행찾기-->
             <div class="fixed-action-btn">
               <%= link_to posts_path, class:"btn-floating btn-large indigo pulse" do %>
@@ -33,8 +34,8 @@
         <div class="so-widget-sow-headline so-widget-sow-headline-default-0f5a0189729b">
             <div class="sow-headline-container ">
                 <h1 class="sow-headline">
-                    <b>ABOUT</b>
-                    US</h1>
+                    <span class="card-title">ABOUT
+                    US</span></h1>
             </div>
         </div>
         <br></br>
@@ -76,54 +77,126 @@
             </div>
         </div>
     </div>
-    <div class="parallax-container" id="overlay">
-        <div class="parallax"><img src="https://upload.wikimedia.org/wikipedia/commons/a/ac/Lanikai_2009_wide.jpg" alt="Unsplashed background img 2" style="bottom: autofocus; display: block;">></div>
-    </div>
-    <div class="empty-spacing"></div>
-    <h2 class="tripmate-intro">
-        <strong>Tripmate</strong>를 통해서...</h2>
+
+
+<!--트립메이트방문자증가-->
+<div id="tm">
+  <br></br>
+  <div class="so-widget-sow-headline so-widget-sow-headline-default-0f5a0189729b">
+      <div class="sow-headline-container ">
+          <h1 class="sow-headline"><span class="card-title">
+            Trip Mate에서...</h1></span>
+      </div>
+  </div>
+  <br></br>
+  <br></br>
+<div class="tmsection">
+  <div class="row">
+      <div id="charoftm" class="col s12 centralize center">
+          <div class="col s12 m4 box-solution">
+            <i class="medium material-icons">drive_eta</i>
+              <div class="icon-block">
+                  <p class="grey-text text-darken-3 col s10 centralize">
+                    지금까지 여행한 <span style="color: #FF0000;font-weight:bold;">장소수</span></p>
+              </div>
+          </div>
+
+          <div class="col s12 m4 box-solution">
+                <i class="medium material-icons">directions_run</i>
+              <div class="icon-block">
+                  <p class="grey-text text-darken-3 col s10 centralize">
+                      지금까지 여행한 <span style="color: #FF0000;font-weight:bold;">사람수</span></p>
+              </div>
+          </div>
+          <div class="col s9 m4 box-solution">
+            <i class="medium material-icons">location_city</i>
+              <div class="icon-block">
+                  <p class="grey-text text-darken-3 col s10 centralize">
+                      지금까지의 <span style="color: #FF0000;font-weight:bold;">여행지</span></p>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<br></br>
+<br></br>
+<br></br>
+</div>
+ <div class="empty-spacing"></div>
+
+
+<div class="parallax-container" id="overlay">
+       <div class="parallax"><img src="http://www.zingerbug.com/Backgrounds/background_images/light_blue_diagonal_bricks_pattern.gif" alt="Unsplashed background img 2" style="bottom: autofocus; display: block;">></div>
+   </div>
+
+
+   <div class="empty-spacing"></div>
+   <h2 class="tripmate-intro">
+    <span class="card-title">  Tripmates의 여행지추천</span></h2>
 </div>
 <div class="container">
-    <div class="row">
-        <div class="col s6">
-            <section class="hoverEffect">
-                <img src="https://aos.iacpublishinglabs.com/question/aq/700px-394px/many-people-missing-year_8e9fc97c68b730f4.jpg?domain=cx.aos.ask.com" alt="how-many" class="image">
-                <div class="txt">
-                    <h3>@@명의</h3>분들이</div>
-            </section>
-        </div>
-        <div class="col s6">
-            <section class="hoverEffect">
-                <img src="http://laraveldaily.com/wp-content/uploads/2017/01/where_word.gif" alt="where" class="image">
-                <div class="txt">
-                    <h3>전국각지,해외에서</h3>
-                </div>
-            </section>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col s6">
-            <section class="hoverEffect">
-                <img src="http://www.rd.com/wp-content/uploads/sites/2/2016/02/02-friends-make-you-more-attractive.jpg" alt="friends" class="image">
-                <div class="txt">
-                    <h3>아름다운 인연</h3>을 만드셨습니다# 그리고 만들고 있습니다.</div>
-            </section>
-        </div>
-        <div class="col s6">
-            <section class="hoverEffect">
-                <img src="https://static.guideadvisor.com/wp-content/uploads/thumb-cache/Time-to-Travel-85d3dedafa29a09e471c7eae279c21cb-840x545-85-nocrop.jpg" alt="time-to-travel" class="image">
-                <div class="txt">
-                    <h3>이제</h3>당신이 주인공입니다!</div>
-            </section>
-        </div>
-    </div>
+   <div class="row">
+       <div class="col s6">
+           <section class="hoverEffect">
+               <img src="http://cfile24.uf.tistory.com/image/213C9A345225669622664D" alt="how-many" class="image">
+               <div class="txt">
+                   <h3>서울</h3>청계천</div>
+           </section>
+       </div>
+       <div class="col s6">
+           <section class="hoverEffect">
+               <img src="http://www.theuniv.co.kr/news/photo/201612/310_726_116.png" alt="where" class="image">
+               <div class="txt">
+                   <h3>전주</h3>한옥마을
+               </div>
+           </section>
+       </div>
+   </div>
+   <div class="row">
+       <div class="col s6">
+           <section class="hoverEffect">
+               <img src="http://cfile22.uf.tistory.com/image/261FB65057D26EB7275392" alt="friends" class="image">
+               <div class="txt">
+                   <h3>용인</h3>에버렌드</div>
+           </section>
+       </div>
+       <div class="col s6">
+           <section class="hoverEffect">
+               <img src="http://cfile7.uf.tistory.com/image/154C72384F6701752CF332" alt="time-to-travel" class="image">
+               <div class="txt">
+                   <h3>경주</h3>불국사</div>
+           </section>
+       </div>
+   </div>
+   <div class="row">
+       <div class="col s6">
+           <section class="hoverEffect">
+               <img src="http://cfile10.uf.tistory.com/image/215F044057428F5F13C47A" alt="friends" class="image">
+               <div class="txt">
+                   <h3>부산</h3>해운대</div>
+           </section>
+       </div>
+       <div class="col s6">
+           <section class="hoverEffect">
+               <img src="http://sujaeshop.kr/wp-content/uploads/2017/01/%EC%84%B1%EC%82%B0%EC%9D%BC%EC%B6%9C%EB%B4%89_%EC%9B%8C%ED%84%B0%EB%A7%88%ED%81%AC.jpg" alt="time-to-travel" class="image">
+               <div class="txt">
+                   <h3>제주</h3>성산일출봉</div>
+           </section>
+       </div>
+   </div>
 </div>
+
+
+
+
+
 <div class="empty-spacing"></div>
 <div class="parallax-container" id="overlay">
-    <div class="parallax"><img src="https://upload.wikimedia.org/wikipedia/commons/a/ac/Lanikai_2009_wide.jpg" alt="Unsplashed background img 2" style="bottom: autofocus; display: block;">></div>
+    <div class="parallax"><img src="http://www.zingerbug.com/Backgrounds/background_images/light_blue_diagonal_bricks_pattern.gif" alt="Unsplashed background img 2" style="bottom: autofocus; display: block;">></div>
 </div>
 <div class="empty-spacing"></div>
-<!--트립메이트 방문자수,매칭수,트립수 체크기능--->
+
+
 <div class="container">
     <div class="row">
         <div class="col s6">

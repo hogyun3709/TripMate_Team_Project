@@ -11,16 +11,15 @@
 }
 
 .tripmate-intro {
-  font-family: 'Sedgwick Ave', serif;
   text-align: center;
+  font-size: 2.5em;
 }
 
 .parallax-container {
   min-height: 200px;
   max-height: 300px;
 }
-
-                /***** Hover Effect *****/
+/***** Hover Effect *****/
 
 .hoverEffect {
     float: left;
