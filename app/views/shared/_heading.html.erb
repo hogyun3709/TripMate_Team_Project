@@ -6,9 +6,12 @@
       <ul class="right hide-on-med-and-down">
       <% if user_signed_in? %>
         <li>
-          <a href="sass.html">
-            <i class="material-icons">search</i>
-          </a>
+          <%= current_user.email%>
+        </li>
+        <li class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="마이 페이지">
+          <%= link_to users_path(current_user) do %>
+            <i class="material-icons">account_circle</i>
+          <% end %>
         </li>
         <li class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="로그아웃">
           <%= link_to destroy_user_session_path, method: :delete do %>
