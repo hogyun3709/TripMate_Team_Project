@@ -22,7 +22,6 @@ class DeviseCreateUsers < ActiveRecord::Migration[5.1]
       ##Custom part
 
       t.string :name, null: false
-      t.string :address, null: false
       t.string :sex, null: false
 
       ## Confirmable
