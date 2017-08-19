@@ -88,7 +88,7 @@ video{
 
 #overlay {
   position: relative;;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.2);
   top: 0;
   bottom: 0;
   height: 100%;
@@ -116,11 +116,12 @@ video{
   color: #000;
   text-align: center;
 }
+
 #tm{
   background-image: url("3.png");
-  height: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
   width: 100%;
   min-width: 100%;
-  min-height: 100%;
-  position:relative;
+  position: relative;
 }
