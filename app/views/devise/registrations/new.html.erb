@@ -22,6 +22,31 @@
           <%= f.radio_button :sex, 'Female', class: "with-gap" %>
           <%= f.label :sex, 'Female', value: 'Female' %>
         </div>
+        <div class="input-field">
+          <i class="material-icons prefix">place</i>
+          <%= f.label :address, '주소' %>
+          <%= f.text_field :address %>
+        </div>
+        <div class="input-field">
+          <i class="material-icons prefix">call</i>
+          <%= f.label :tele_phone, '전화번호' %>
+          <%= f.text_field :tele_phone %>
+        </div>
+        <div class="input-field">
+          <i class="material-icons prefix">tag_faces</i>
+          <%= f.label :habbit, '취미' %>
+          <%= f.text_field :habbit %>
+        </div>
+        <div class="input-field">
+          <i class="material-icons prefix">thumb_up</i>
+          <%= f.label :strong_point, '자신의 강점' %>
+          <%= f.text_field :strong_point %>
+        </div>
+        <div class="input-field">
+          <i class="material-icons prefix">assignment_ind</i>
+          <%= f.label :introduce_myself, '자기 소개' %>
+          <%= f.text_area :introduce_myself, class: "materialize-textarea" %>
+        </div>
         <br />
         <div class="input-field">
           <i class="material-icons prefix">lock_open</i>
