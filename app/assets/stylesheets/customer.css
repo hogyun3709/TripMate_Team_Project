@@ -82,3 +82,22 @@
 .card-title {
   font-family: 'Pacifico', cursive;
 }
+
+.nav-wrap{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 99;
+}
+
+.search_wrap {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    z-index: 1;
+    overflow: hidden;
+    background-color: rgba(0,0,0,0.7);
