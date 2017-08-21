@@ -1,3 +1,35 @@
-<h4><%= current_user.name %></h4>
-<%= current_user.email%>
-<%= current_user.address  %>
+<div class="container">
+  <div class="row">
+    <div class="col l12 m12 s12">
+      <h4>여행자 찾기</h4>
+      <blockquote>
+        이름을 클릭하시면 더 자세한 정보를 볼 수 있습니다.
+      </blockquote>
+      <div class="divider"></div>
+      <% if @users.length > 0 %>
+        <table class="bordered highlight responsive-table">
+          <thead>
+            <tr>
+              <th>이름</th>
+              <th>성별</th>
+            </tr>
+          </thead>
+          <tbody>
+            <% @users.each do |user| %>
+              <tr>
+                <td>
+                  <%= link_to user_path(user), class: "color-inherit" do %>
+                    <%= user.name %>
+                  <% end %>
+                </td>
+                <td><%= user.sex %></td>
+              </tr>
+            <% end %>
+          </tbody>
+        </table>
+      <% else %>
+        <div class="card-panel orange lighten-1 white-text"><i class="fa fa-users" aria-hidden="true"></i>&nbsp;현재 가입한 학생들이 없습니다.</div>
+      <% end %>
+    </div>
+  </div>
+</div>

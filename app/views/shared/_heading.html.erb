@@ -6,10 +6,15 @@
       <ul class="right hide-on-med-and-down">
       <% if user_signed_in? %>
         <li>
-          <%= current_user.email%>
+          <%= current_user.name%>
+        </li>
+        <li class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="여행자 찾기">
+          <%= link_to users_path do %>
+            <i class="material-icons">supervisor_account</i>
+          <% end %>
         </li>
         <li class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="마이 페이지">
-          <%= link_to users_path(current_user) do %>
+          <%= link_to user_path(current_user) do %>
             <i class="material-icons">account_circle</i>
           <% end %>
         </li>
