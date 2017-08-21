@@ -98,6 +98,13 @@ video{
   width:100%;
 }
 
+.ht100 {
+  height: 100%;
+}
+
+.pr40{
+  padding-right: 20px;
+}
 
 .section_count h1
 {
@@ -124,4 +131,9 @@ video{
   width: 100%;
   min-width: 100%;
   position: relative;
+}
+//CSS for tooltip
+.backdrop{
+  background: transparent;
+
 }
