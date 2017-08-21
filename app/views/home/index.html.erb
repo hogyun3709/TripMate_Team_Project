@@ -26,15 +26,8 @@
         <div class="empty-spacing"></div>
         <div class="empty-spacing"></div>
 
-        <a class="semi-transparent-button" href="#">
+        <%= link_to posts_path, class:"semi-transparent-button hoverable" do %>
           <strong>여행찾기</strong>
-        </a>
-      </div>
-
-      <!--여행찾기-->
-      <div class="fixed-action-btn">
-        <%= link_to posts_path, class:"btn-floating btn-large indigo pulse" do %>
-        <i class="large material-icons">directions_car</i>
         <% end %>
       </div>
       <div class="empty-spacing"></div>
