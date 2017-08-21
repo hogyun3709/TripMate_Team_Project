@@ -1,211 +1,233 @@
 <html>
+  <head>
     <head>
-        <head>
-            <style>
-                @import url( 'https://fonts.googleapis.com/css?family=Pacifico');
-                @import url( 'https://fonts.googleapis.com/css?family=Sedgwick+Ave');
-                /***** Hover Effect *****/
+      <style>
+        @import url( 'https://fonts.googleapis.com/css?family=Pacifico');
+        @import url( 'https://fonts.googleapis.com/css?family=Sedgwick+Ave');
+        /***** Hover Effect *****/
 
-            </style>
-            <script src="js/materialize.js"></script>
-            <script src="js/init.js"></script>
-            <script src="js/jquery-2.1.1.min.js"></script>
-        </head>
+      </style>
+      <script src="js/materialize.js"></script>
+      <script src="js/init.js"></script>
+      <script src="js/jquery-2.1.1.min.js"></script>
     </head>
-    <body>
-        <div id="head-main">
-            <!--동영상재생-->
-            <div id="video-container">
-                <%= video_tag "tripmm.mp4", :controls => true, :autobuffer => true, autoplay: :autoplay, loop: :loop, muted: true%>
-            </div>
-            <div class="content">
-                <h1>
-                    <span class="card-title">여행이 떠나고싶을땐 TripMates</span>
-                </h1>
-                <p>여행시 복잡한 역할분담, 싹 해결해드려요</p>
-                <div class="empty-spacing"></div>
-                <div class="empty-spacing"></div>
-
-              <a class="semi-transparent-button" href="#"><strong>여행찾기</strong></a>
-            </div>
-
-            <!--여행찾기-->
-            <div class="fixed-action-btn">
-                <%= link_to posts_path, class:"btn-floating btn-large indigo pulse" do %>
-                <i class="large material-icons">directions_car</i>
-                <% end %>
-            </div>
-            <div class="empty-spacing"></div>
-        </div>
-        <div class="empty-spacing"></div>
-        <div class="so-widget-sow-headline so-widget-sow-headline-default-0f5a0189729b">
-            <div class="sow-headline-container ">
-                <h1 class="sow-headline">
-                    <span class="card-title">ABOUT US</span>
-                </h1>
-            </div>
-        </div>
-        <br></br>
-
-        <!---트립메이트의 3가지특성-------->
-        <div class="container">
-            <div class="row">
-                <div id="charoftm" class="col s12 centralize center">
-                    <div class="col s12 m4 box-solution">
-                        <div class="icon-block">
-                            <i class="large material-icons">flash_on</i>
-                            <h5 class="center blue-text text-lighten-2 light">
-                                Find your Character</h5>
-                            <p class="grey-text text-darken-3 col s12 centralize">자신의 역할을 결정하세요. 여행시 어떤역을해야될지 고민되셧죠? TripMate는 여행시 필요한 역할분담을 할수있도록 도와줍니다.</p>
-                        </div>
-                    </div>
-
-                    <div class="col s12 m4 box-solution">
-                        <div class="icon-block">
-                            <i class="large material-icons">supervisor_account</i>
-                            <h5 class="center blue-text text-lighten-2 light">
-                                Find your mates</h5>
-                            <p class="grey-text text-darken-3 col s12 centralize">
-                                자신과 코드가 맞는 여행친구를 찾아보세요. 가끔은 색다른친구들과 여행을떠나는것도 좋은경험이에요.</p>
-                        </div>
-                    </div>
-                    <div class="col s9 m4 box-solution">
-                        <div class="icon-block">
-                            <i class="large material-icons">thumb_up</i>
-                            <h5 class="center blue-text text-lighten-2 light">Find your MVP</h5>
-                            <p class="grey-text text-darken-3 col s12 centralize">
-                                이번여행의 MVP가 되어보세요. 모든사람들이 여행시 당신을 찾게될겁니다.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!--트립메이트방문자증가-->
-        <div id="tm">
-            <br></br>
-            <div class="so-widget-sow-headline so-widget-sow-headline-default-0f5a0189729b">
-                <div class="sow-headline-container ">
-                    <h2 class="sow-headline">
-                        <span class="card-title">
-                            Trip Mate에서...</h2>
-                    </span>
-                </div>
-            </div>
-            <div class="empty-spacing"></div>
-            <div class="empty-spacing"></div>
-            <div class="empty-spacing"></div>
-            <div class="empty-spacing"></div>
-            <div class="tmsection">
-                <div class="row">
-                    <div id="charoftm" class="col s12 centralize center">
-                        <div class="col s12 m4 box-solution">
-                            <i class="medium material-icons">drive_eta</i>
-                            <div class="icon-block">
-                                <p class="grey-text text-darken-3 col s12 centralize">
-                                    지금까지 여행한
-                                    <span style="color: #FF0000;font-weight:bold;">장소 수</span>
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="col s12 m4 box-solution">
-                            <i class="medium material-icons">directions_run</i>
-                            <div class="icon-block">
-                                <p class="grey-text text-darken-3 col s12 centralize">
-                                    지금까지 여행한
-                                    <span style="color: #FF0000;font-weight:bold;">사람 수</span>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col s9 m4 box-solution">
-                            <i class="medium material-icons">location_city</i>
-                            <div class="icon-block">
-                                <p class="grey-text text-darken-3 col s12 centralize">
-                                    지금까지의
-                                    <span style="color: #FF0000;font-weight:bold;">여행지</span>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="empty-spacing"></div>
-            <div class="empty-spacing"></div>
-            <div class="empty-spacing"></div>
-            <div class="empty-spacing"></div>
-
-        </div>
+  </head>
+  <body>
+    <div id="head-main">
+      <!--동영상재생-->
+      <div id="video-container">
+        <%= video_tag "tripmm.mp4", :controls => true, :autobuffer => true, autoplay: :autoplay, loop: :loop, muted: true%>
+      </div>
+      <div class="content">
+        <h1>
+          <span class="card-title">여행이 떠나고싶을땐 TripMates</span>
+        </h1>
+        <p>여행시 복잡한 역할분담, 싹 해결해드려요</p>
         <div class="empty-spacing"></div>
         <div class="empty-spacing"></div>
-        <h2 class="tripmate-intro">
-            <span class="card-title">
-                Tripmates의 여행지추천</span>
-        </h2>
+
+        <a class="semi-transparent-button" href="#">
+          <strong>여행찾기</strong>
+        </a>
+      </div>
+
+      <!--여행찾기-->
+      <div class="fixed-action-btn">
+        <%= link_to posts_path, class:"btn-floating btn-large indigo pulse" do %>
+        <i class="large material-icons">directions_car</i>
+        <% end %>
+      </div>
+      <div class="empty-spacing"></div>
     </div>
     <div class="empty-spacing"></div>
-    <div class="empty-spacing"></div>
+    <div class="so-widget-sow-headline so-widget-sow-headline-default-0f5a0189729b">
+      <div class="sow-headline-container ">
+        <h1 class="sow-headline">
+          <span class="card-title">ABOUT US</span>
+        </h1>
+      </div>
+    </div>
+    <br></br>
+
+    <!---트립메이트의 3가지특성-------->
     <div class="container">
-        <div class="row">
-            <div class="col s6">
-                <section class="hoverEffect">
-                    <img src="http://cfile24.uf.tistory.com/image/213C9A345225669622664D" alt="how-many" class="image">
-                    <div class="txt">
-                        <h3>서울</h3>청계천</div>
-                </section>
+      <div class="row">
+        <div id="charoftm" class="col s12 centralize center">
+          <div class="col s12 m4 box-solution">
+            <div class="icon-block">
+              <i class="large material-icons">flash_on</i>
+              <h5 class="center blue-text text-lighten-2 light">
+                Find your Character</h5>
+              <p class="grey-text text-darken-3 col s12 centralize">자신의 역할을 결정하세요. 여행시 어떤역을해야될지 고민되셧죠? TripMate는 여행시 필요한 역할분담을 할수있도록 도와줍니다.</p>
             </div>
-            <div class="col s6">
-                <section class="hoverEffect">
-                    <img src="http://www.theuniv.co.kr/news/photo/201612/310_726_116.png" alt="where" class="image">
-                    <div class="txt">
-                        <h3>전주</h3>한옥마을
-                    </div>
-                </section>
+          </div>
+
+          <div class="col s12 m4 box-solution">
+            <div class="icon-block">
+              <i class="large material-icons">supervisor_account</i>
+              <h5 class="center blue-text text-lighten-2 light">
+                Find your mates</h5>
+              <p class="grey-text text-darken-3 col s12 centralize">
+                자신과 코드가 맞는 여행친구를 찾아보세요. 가끔은 색다른친구들과 여행을떠나는것도 좋은경험이에요.</p>
             </div>
+          </div>
+          <div class="col s9 m4 box-solution">
+            <div class="icon-block">
+              <i class="large material-icons">thumb_up</i>
+              <h5 class="center blue-text text-lighten-2 light">Find your MVP</h5>
+              <p class="grey-text text-darken-3 col s12 centralize">
+                이번여행의 MVP가 되어보세요. 모든사람들이 여행시 당신을 찾게될겁니다.</p>
+            </div>
+          </div>
         </div>
-        <div class="row">
-            <div class="col s6">
-                <section class="hoverEffect">
-                    <img src="http://cfile22.uf.tistory.com/image/261FB65057D26EB7275392" alt="friends" class="image">
-                    <div class="txt">
-                        <h3>용인</h3>에버렌드</div>
-                </section>
-            </div>
-            <div class="col s6">
-                <section class="hoverEffect">
-                    <img src="http://cfile7.uf.tistory.com/image/154C72384F6701752CF332" alt="time-to-travel" class="image">
-                    <div class="txt">
-                        <h3>경주</h3>불국사</div>
-                </section>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col s6">
-                <section class="hoverEffect">
-                    <img src="http://cfile10.uf.tistory.com/image/215F044057428F5F13C47A" alt="friends" class="image">
-                    <div class="txt">
-                        <h3>부산</h3>해운대</div>
-                </section>
-            </div>
-            <div class="col s6">
-                <section class="hoverEffect">
-                    <img src="http://sujaeshop.kr/wp-content/uploads/2017/01/%EC%84%B1%EC%82%B0%EC%9D%BC%EC%B6%9C%EB%B4%89_%EC%9B%8C%ED%84%B0%EB%A7%88%ED%81%AC.jpg" alt="time-to-travel" class="image">
-                    <div class="txt">
-                        <h3>제주</h3>성산일출봉</div>
-                </section>
-            </div>
-        </div>
+      </div>
     </div>
 
+    <!--트립메이트방문자증가-->
+    <div id="tm">
+      <br></br>
+      <div class="so-widget-sow-headline so-widget-sow-headline-default-0f5a0189729b">
+        <div class="sow-headline-container ">
+          <h2 class="sow-headline">
+            <span class="card-title">
+              Trip Mate에서...</h2>
+          </span>
+        </div>
+      </div>
+      <div class="empty-spacing"></div>
+      <div class="empty-spacing"></div>
+      <div class="empty-spacing"></div>
+      <div class="empty-spacing"></div>
+      <div class="tmsection">
+        <div class="row">
+          <div id="charoftm" class="col s12 centralize center">
+            <div class="col s12 m4 box-solution">
+              <i class="medium material-icons">drive_eta</i>
+              <div class="icon-block">
+                <p class="grey-text text-darken-3 col s12 centralize">
+                  지금까지 여행한
+                  <span style="color: #FF0000;font-weight:bold;">장소 수</span>
+                </p>
+              </div>
+            </div>
+
+            <div class="col s12 m4 box-solution">
+              <i class="medium material-icons">directions_run</i>
+              <div class="icon-block">
+                <p class="grey-text text-darken-3 col s12 centralize">
+                  지금까지 여행한
+                  <span style="color: #FF0000;font-weight:bold;">사람 수</span>
+                </p>
+              </div>
+            </div>
+            <div class="col s9 m4 box-solution">
+              <i class="medium material-icons">location_city</i>
+              <div class="icon-block">
+                <p class="grey-text text-darken-3 col s12 centralize">
+                  지금까지의
+                  <span style="color: #FF0000;font-weight:bold;">여행지</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="empty-spacing"></div>
+      <div class="empty-spacing"></div>
+      <div class="empty-spacing"></div>
+      <div class="empty-spacing"></div>
+
+    </div>
     <div class="empty-spacing"></div>
-    <div class="parallax-container" id="overlay">
-        <div class="parallax"><img src="https://lmimirror3.azureedge.net/static/media/1769/c0c2bbc4-7e62-4718-862a-353cd252e031/the-trip-8-video_image.jpg" alt="Unsplashed background img 2" style="bottom: autofocus; display: block;">></div>
-    </div>
     <div class="empty-spacing"></div>
-
-
-                </div>
-            </div>
-        </div>
+    <h2 class="tripmate-intro">
+      <span class="card-title">
+        Tripmates의 여행지추천</span>
+    </h2>
+  </div>
+  <div class="empty-spacing"></div>
+  <div class="empty-spacing"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col s6">
+        <section class="hoverEffect">
+          <img src="http://cfile24.uf.tistory.com/image/213C9A345225669622664D" alt="how-many" class="image">
+          <div class="txt">
+            <h3>서울</h3>청계천</div>
+        </section>
+      </div>
+      <div class="col s6">
+        <section class="hoverEffect">
+          <img src="http://www.theuniv.co.kr/news/photo/201612/310_726_116.png" alt="where" class="image">
+          <div class="txt">
+            <h3>전주</h3>한옥마을
+          </div>
+        </section>
+      </div>
     </div>
+    <div class="row">
+      <div class="col s6">
+        <section class="hoverEffect">
+          <img src="http://cfile22.uf.tistory.com/image/261FB65057D26EB7275392" alt="friends" class="image">
+          <div class="txt">
+            <h3>용인</h3>에버렌드</div>
+        </section>
+      </div>
+      <div class="col s6">
+        <section class="hoverEffect">
+          <img src="http://cfile7.uf.tistory.com/image/154C72384F6701752CF332" alt="time-to-travel" class="image">
+          <div class="txt">
+            <h3>경주</h3>불국사</div>
+        </section>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s6">
+        <section class="hoverEffect">
+          <img src="http://cfile10.uf.tistory.com/image/215F044057428F5F13C47A" alt="friends" class="image">
+          <div class="txt">
+            <h3>부산</h3>해운대</div>
+        </section>
+      </div>
+      <div class="col s6">
+        <section class="hoverEffect">
+          <img src="http://sujaeshop.kr/wp-content/uploads/2017/01/%EC%84%B1%EC%82%B0%EC%9D%BC%EC%B6%9C%EB%B4%89_%EC%9B%8C%ED%84%B0%EB%A7%88%ED%81%AC.jpg" alt="time-to-travel" class="image">
+          <div class="txt">
+            <h3>제주</h3>성산일출봉</div>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <div class="empty-spacing"></div>
+  <div class="parallax-container" id="overlay">
+    <div class="parallax"><img src="https://lmimirror3.azureedge.net/static/media/1769/c0c2bbc4-7e62-4718-862a-353cd252e031/the-trip-8-video_image.jpg" alt="Unsplashed background img 2" style="bottom: autofocus; display: block;">></div>
+  </div>
+  <div class="empty-spacing"></div>
+  <div class="container">
+      <div class="row">
+          <div class="col s6">
+              <div class="card">
+                  <div class="card-image">
+                    <%= image_tag('http://cfile29.uf.tistory.com/image/25736B35521CC61207BC57', class:"responsive-img") %>
+                      <span class="card-title">이 주의 BEST6</span>
+                  </div>
+                  <div class="card-action">
+                      <a href="#">동료들의 코멘트 보러가기</a>
+                  </div>
+              </div>
+          </div>
+          <div class="col s6">
+              <div class="card">
+                  <div class="card-image">
+                      <%= image_tag('http://lastsecond.asia/wp-content/uploads/2016/03/%D8%AA%D9%88%D8%B5%D9%8A%D9%87-%D8%B3%D9%81%D8%B17.jpeg', class:"responsive-img") %>
+                      <span class="card-title">이 주의 BEST TRIP</span>
+                  </div>
+                  <div class="card-action">
+                      <a href="#">여행리뷰 보러가기</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
 </body>
