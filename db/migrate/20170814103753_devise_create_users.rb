@@ -23,6 +23,11 @@ class DeviseCreateUsers < ActiveRecord::Migration[5.1]
 
       t.string :name, null: false
       t.string :sex, null: false
+      t.string :address, null:false
+      t.string :tele_phone, null:false
+      t.string :habbit, null:false
+      t.string :strong_point, null:false
+      t.string :introduce_myself, null:false
 
       ## Confirmable
       t.string   :confirmation_token
