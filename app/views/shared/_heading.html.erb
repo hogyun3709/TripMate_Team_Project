@@ -6,7 +6,7 @@
       <ul class="right hide-on-med-and-down">
       <% if user_signed_in? %>
         <li>
-          <span class="pr40">Let's get it</span><span class="pr40"><%= current_user.name%></span>
+          <span class="pr40"><%= current_user.name%></span>
         </li>
         <li class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="여행 찾기">
           <%= link_to posts_path do %>
