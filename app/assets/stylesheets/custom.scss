@@ -68,7 +68,7 @@ video{
   min-width: 100%;
   min-height: 100%;
   font-family: arial;
-  font-size: 1.5em;
+  font-size: 2.5em;
   margin: 10px 0;
   color: #fff;
   text-align: center;
@@ -148,7 +148,14 @@ video{
   height:200px;
   vertical-align: middle;
 }
-#charoftm p
-{
-  font-size: 1.5em;
+
+html {
+  font-family: 'Hanna', serif;
+}
+.card-title {
+  font-family: 'Hanna', serif;
+}
+#insert_botton {
+
+  font-size:50px;
 }
