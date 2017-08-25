@@ -16,6 +16,7 @@
 //= require_tree .
 
 $(function() {
+  $(".button-collapse").sideNav();
     $(window).scroll(function() {
         $('.counter').each(function() {
             var $this = $(this),
@@ -43,6 +44,6 @@ $(function() {
         });
     });
 
-    $(".button-collapse").sideNav();
+
 
 });
