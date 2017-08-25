@@ -1,0 +1,108 @@
+.p3 {
+  border-radius: 40px;
+
+}
+
+.line {
+  position: absolute;
+  margin-left: 0.5rem;
+  height: 20.5vw;
+    vertical-align: middle;
+}
+
+.tripmate-intro {
+  text-align: center;
+  font-size: 2.5em;
+}
+
+.parallax-container {
+  min-height: 200px;
+  max-height: 300px;
+}
+/***** Hover Effect *****/
+
+.hoverEffect {
+    float: left;
+    position: relative;
+    width: 500px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 30px;
+    max-width: 100%
+}
+
+.hoverEffect .image {
+    display: block;
+    opacity: 1;
+    position: relative;
+    transform: scale(1.3);
+    transition: 0.5s ease;
+    width: 550px;
+    height: 330px;
+}
+
+.hoverEffect:hover > .image {
+    transform: scale(1);
+    filter: blur(5px);
+    opacity: 0.3;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.hoverEffect .txt {
+    color: black;
+    font-size: 20px;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    line-height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(195,193,149,0);
+    opacity: 0;
+    overflow: hidden;
+    transform: scale(2);
+    transition: 0.3s ease;
+}
+
+.hoverEffect:hover .txt {
+    background: rgba(195,193,149,0.5);
+    transform: scale(1);
+    opacity: 1;
+}
+
+.hoverEffect .txt h3 {
+    font-size: 30px;
+    margin: 120px 0 10px;
+}
+
+.card-title {
+  font-family: 'Pacifico', cursive;
+}
+
+.nav-wrap{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 99;
+    padding-left: 10%;
+    padding-right: 5%;
+}
+.semi-transparent-button {
+display: block;
+margin: 0 auto;
+padding: 8px;
+width: 80%;
+max-width: 200px;
+border-color: #ffffff;
+border-style: solid;
+color: #ffffff;
+text-align: center;
+letter-spacing: 1px;
+
+}
