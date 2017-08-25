@@ -125,7 +125,7 @@ video{
 }
 
 #tm{
-  background-image: url("3.png");
+  background-image: url(asset_path('3.png'));
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
