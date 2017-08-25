@@ -42,23 +42,21 @@
           <%= f.label :strong_point, '자신의 강점' %>
           <%= f.text_field :strong_point %>
         </div>
-        <div class="input-field" id="jobs">
+        <div class="field" id="jobs">
           <i class="material-icons prefix">stars</i>
-          <span id ="job_title">_ _ _  역할 선택하기</span>
-          <%= f.radio_button :job, '낚시꾼', class: "with-gap", checked: true %>
-          <%= f.label :job, '낚시꾼', value: '낚시꾼' %>
-          <%= f.radio_button :job, '창지기', class: "with-gap" %>
-          <%= f.label :job, '창지기', value: '창지기' %>
-          <%= f.radio_button :job, '등대지기', class: "with-gap" %>
-          <%= f.label :job, '등대지기', value: '등대지기' %>
-          <%= f.radio_button :job, '탐색꾼', class: "with-gap" %>
-          <%= f.label :job, '탐색꾼', value: '탐색꾼' %>
-          <%= f.radio_button :job, '파도잡이', class: "with-gap" %>
-          <%= f.label :job, '파도잡이', value: '파도잡이' %>
-          <%= f.radio_button :job, '길잡이', class: "with-gap" %>
-          <%= f.label :job, '길잡이', value: '길잡이' %>
-          <%= f.radio_button :job, '화염사', class: "with-gap" %>
-          <%= f.label :job, '화염사', value: '화염사' %>
+          <span id ="job_title">&nbsp;&nbsp;&nbsp;&nbsp;역할 선택하기</span>
+          <br /><br />
+          <%= f.radio_button :job, 'fman', class: "with-gap", checked: true %>
+          <%= f.label :job, '낚시꾼', value: 'fman' %>
+          <%= f.radio_button :job, 'sman', class: "with-gap" %>
+          <%= f.label :job, '창지기', value: 'sman' %>
+          <%= f.radio_button :job, 'lman', class: "with-gap" %>
+          <%= f.label :job, '등대지기', value: 'lman' %>
+          <%= f.radio_button :job, 'wman', class: "with-gap" %>
+          <%= f.label :job, '파도잡이', value: 'wman' %>
+          <%= f.radio_button :job, 'gman', class: "with-gap" %>
+          <%= f.label :job, '길잡이', value: 'gman' %>
+
         <div class="input-field">
           <i class="material-icons prefix">assignment_ind</i>
           <%= f.label :introduce_myself, '자기 소개' %>
