@@ -6,11 +6,12 @@
           <h4><%= @user.name %></h4>
         </li>
         <li class="collection-item valign-wrapper"><i class="tiny material-icons">email</i>&nbsp;&nbsp;<%= @user.email %></li>
-        <li class="collection-item valign-wrapper"><i class="tiny material-icons">grade</i>&nbsp;&nbsp;<%= @user.name %></li>
+        <li class="collection-item valign-wrapper"><i class="tiny material-icons">person</i>&nbsp;&nbsp;<%= @user.name %></li>
         <li class="collection-item valign-wrapper"><i class="tiny material-icons">supervisor_account</i>&nbsp;&nbsp;<%= @user.sex %></li>
         <li class="collection-item valign-wrapper"><i class="tiny material-icons">home</i>&nbsp;&nbsp;<%= @user.address %></li>
         <li class="collection-item valign-wrapper"><i class="tiny material-icons">phone_iphone</i>&nbsp;&nbsp;<%= @user.tele_phone %></li>
         <li class="collection-item valign-wrapper"><i class="tiny material-icons">directions_bike</i>&nbsp;&nbsp;<%= @user.habbit %></li>
+
         <li class="collection-item valign-wrapper"><i class="tiny material-icons">accessibility</i>&nbsp;&nbsp;<%= @user.strong_point %></li>
       </ul>
       <% if @user == current_user %>
