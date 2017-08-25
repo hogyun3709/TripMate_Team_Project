@@ -17,6 +17,9 @@
 
 $(function() {
   $(".button-collapse").sideNav();
+  $(document).ready(function() {
+    $('select').material_select();
+  });
     $(window).scroll(function() {
         $('.counter').each(function() {
             var $this = $(this),
