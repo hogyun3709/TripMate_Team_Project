@@ -14,6 +14,11 @@
             <span><i class="material-icons">find_replace</i></span>
           <% end %>
         </li>
+        <li class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="여행지 찾기">
+          <%= link_to home_recommand_path do %>
+            <span><i class="material-icons">navigation</i></span>
+          <% end %>
+        </li>
         <li class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="마이 페이지">
           <%= link_to user_path(current_user) do %>
             <i class="material-icons">face</i>
@@ -43,6 +48,7 @@
         <li><%= link_to '여행찾기', posts_path %></li>
         <li><%= link_to '마이 페이지', users_path %></li>
         <li><%= link_to '프로필', user_path(current_user) %></li>
+        <li><%= link_to '여행지 추천', users_path %></li>
         <li><%= link_to '로그아웃', destroy_user_session_path, method: :delete %></li>
       <% else %>
         <li><%= link_to '회원가입', new_user_registration_path %></li>
