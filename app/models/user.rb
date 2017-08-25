@@ -22,5 +22,11 @@ class User < ApplicationRecord
     when 'gman'
       self.job = '길잡이'
     end
+    case sex
+    when 'Male'
+      self.sex = '남자'
+    when 'Female'
+      self.sex = '여자'
+    end
   end
 end
