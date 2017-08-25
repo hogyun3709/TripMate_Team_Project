@@ -13,6 +13,7 @@
         <li class="collection-item valign-wrapper"><i class="tiny material-icons">directions_bike</i>&nbsp;&nbsp;<%= @user.habbit %></li>
 
         <li class="collection-item valign-wrapper"><i class="tiny material-icons">accessibility</i>&nbsp;&nbsp;<%= @user.strong_point %></li>
+        <li class="collection-item valign-wrapper"><i class="tiny material-icons">star</i>&nbsp;&nbsp;<%= @user.job %></li>
       </ul>
       <% if @user == current_user %>
         <%= link_to "프로필 수정하기", edit_user_registration_path, class: "waves-effect waves-light btn green lighten-1 wd100" %>
