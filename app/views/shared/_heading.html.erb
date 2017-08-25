@@ -1,6 +1,6 @@
 <!--logo and nevigation--->
   <nav>
-    <div class="nav-wrap">
+    <div class="nav-wrapper container">
       <a href="/" class="brand-logo">
         <span class="card-title">Tripmates</span></a>
       <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
@@ -44,15 +44,37 @@
       </ul>
       <ul class="side-nav" id="mobile-demo">
       <% if user_signed_in? %>
-        <li><%= link_to "#{current_user.name}", user_path(current_user) %></li>
-        <li><%= link_to '여행찾기', posts_path %></li>
-        <li><%= link_to '마이 페이지', users_path %></li>
-        <li><%= link_to '프로필', user_path(current_user) %></li>
-        <li><%= link_to '여행지 추천', users_path %></li>
-        <li><%= link_to '로그아웃', destroy_user_session_path, method: :delete %></li>
+        <li>
+          <%= link_to posts_path do %>
+            <i class="material-icons">find_replace</i><span>여행 찾기</span>
+          <% end %>
+        </li>
+        <li>
+          <%= link_to home_recommand_path do %>
+            <i class="material-icons">navigation</i><span>여행지 찾기</span>
+          <% end %>
+        </li>
+        <li>
+          <%= link_to user_path(current_user) do %>
+            <i class="material-icons">face</i><span>프로필</span>
+          <% end %>
+        </li>
+        <li>
+          <%= link_to destroy_user_session_path, method: :delete do %>
+            <i class="material-icons">power_settings_new</i><span>로그아웃</span>
+          <% end %>
+        </li>
       <% else %>
-        <li><%= link_to '회원가입', new_user_registration_path %></li>
-        <li><%= link_to '로그인', new_user_session_path %></li>
+        <li>
+          <%= link_to new_user_registration_path do %>
+            <i class="material-icons">perm_identity</i>
+          <% end %>
+        </li>
+        <li>
+          <%= link_to new_user_session_path do %>
+            <i class="material-icons">lock</i>
+          <% end %>
+        </li>
       <% end %>
     </ul>
     </div>
