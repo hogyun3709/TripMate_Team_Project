@@ -42,4 +42,7 @@ $(function() {
                 });
         });
     });
+
+    $(".button-collapse").sideNav();
+
 });
