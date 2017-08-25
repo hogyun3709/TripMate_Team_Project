@@ -9,7 +9,7 @@ class ApplicationController < ActionController::Base
 
     devise_parameter_sanitizer.permit(
       :sign_up,
-      keys: [:name, :sex, :address, :tele_phone, :habbit, :strong_point, :introduce_myself]
+      keys: [:name, :sex, :address, :tele_phone, :job, :habbit, :strong_point, :introduce_myself]
     )
     devise_parameter_sanitizer.permit(
       :account_update,

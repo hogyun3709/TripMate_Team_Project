@@ -28,6 +28,7 @@ class DeviseCreateUsers < ActiveRecord::Migration[5.1]
       t.string :habbit, null:false
       t.string :strong_point, null:false
       t.string :introduce_myself, null:false
+      t.string :job, null:false
 
       ## Confirmable
       t.string   :confirmation_token
