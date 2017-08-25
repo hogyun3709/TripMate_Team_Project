@@ -35,6 +35,7 @@ ActiveRecord::Schema.define(version: 20170815162150) do
     t.string "habbit", null: false
     t.string "strong_point", null: false
     t.string "introduce_myself", null: false
+    t.string "job", null: false
     t.string "confirmation_token"
     t.datetime "confirmed_at"
     t.datetime "confirmation_sent_at"
