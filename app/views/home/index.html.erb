@@ -1,6 +1,9 @@
 <html>
   <head>
     <head>
+      <script type="text/javascripts">
+        function toggle_visibilitiy(id){ var e = document.getElementById(id); if(e.style.display == 'block') e.style.display = 'none'; else { e.style.display = 'block' } }
+      </script>
     </head>
   </head>
   <body>
@@ -18,7 +21,7 @@
         <div class="empty-spacing"></div>
 
         <%= link_to users_path, class:"semi-transparent-button hoverable" do %>
-          <strong>Let's get it</strong>
+        <strong>Let's get it</strong>
         <% end %>
       </div>
       <div class="empty-spacing"></div>
@@ -27,12 +30,11 @@
     <div class="so-widget-sow-headline so-widget-sow-headline-default-0f5a0189729b">
       <div class="sow-headline-container ">
         <h1 class="sow-headline">
-          <span class="card-title">ABOUT US</span>
+          <span class="card-title"><u>ABOUT US</u></span>
         </h1>
       </div>
     </div>
-      <div class="empty-spacing"></div>
-    <br></br>
+    <div class="empty-spacing"></div>
 
     <!---트립메이트의 3가지특성-------->
     <div class="container">
@@ -42,7 +44,7 @@
             <div class="icon-block">
               <i class="large material-icons">flash_on</i>
               <h3 class="center blue-text text-lighten-2 light">
-                Find your role</h3>
+                Find your Role</h3>
               <p class="grey-text text-darken-3 col s12 centralize">자신의 역할을 결정하세요. 여행시 어떤역을해야될지 고민되셧죠? TripMate는 여행시 필요한 역할분담을 할수있도록 도와줍니다.</p>
             </div>
           </div>
@@ -51,13 +53,13 @@
             <div class="icon-block">
               <i class="large material-icons">supervisor_account</i>
               <h3 class="center blue-text text-lighten-2 light">
-                Find your mates</h3>
+                Find your Mates</h3>
               <p class="grey-text text-darken-3 col s12 centralize">
                 자신과 코드가 맞는 여행친구를 찾아보세요. 가끔은 색다른친구들과 여행을떠나는것도 좋은경험이에요.</p>
             </div>
           </div>
 
-          <div class="col s9 m4 box-solution">
+          <div class="col s12 m4 box-solution">
             <div class="icon-block">
               <i class="large material-icons">thumb_up</i>
               <h3 class="center blue-text text-lighten-2 light">Find your MVP</h3>
@@ -70,6 +72,80 @@
     </div>
     <div class="empty-spacing"></div>
     <div class="empty-spacing"></div>
+
+    <!--역할분담-->
+    <div class="duty-container">
+      <h1 class="sow-headline">
+        <span class="card-title"><u>T.O.P의 역할분담</u></span>
+      </h1>
+    <div class="empty-spacing"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col s4">
+          <div class="icon-block">
+            <%= image_tag('giljob.jpg', class:'image1')%>
+            <h3 class="center blue-text text-lighten-2 light">
+              길잡이</h3>
+            <p class="grey-text text-darken-3 col s12 centralize">
+              길잡이는 여행에서 운전을 담당하고있는 포지션인데요, 운전면허가 필수조건인 포지션입니다.</p>
+          </div>
+        </div>
+
+        <div class="col s4">
+          <div class="icon-block">
+            <%= image_tag('tamsak.jpg', class:'image1')%>
+            <h3 class="center blue-text text-lighten-2 light">
+              탐색꾼</h3>
+            <p class="grey-text text-darken-3 col s12 centralize">
+              탐색꾼은 말 그대로 탐색을 위한 포지션인데요. 매우 몸놀림으로 여행의 가이드를맡는 포지션입니다.</p>
+          </div>
+        </div>
+
+        <div class="col s4">
+          <div class="icon-block">
+            <%= image_tag('gdungda.jpg', class:'image1')%>
+            <h3 class="center blue-text text-lighten-2 light">등대지기</h3>
+            <p class="grey-text text-darken-3 col s12 centralize">
+              등대지기는 언제,어디서든 여행을 게획하며 여러 포지션과 좋은 시너지를 발휘할 수 있는 필수적인 포지션입니다.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="empty-spacing"></div>
+
+      <div class="row">
+        <div class="col s4">
+          <div class="icon-block">
+            <%= image_tag('fireman.jpg', class:'image1')%>
+            <h3 class="center blue-text text-lighten-2 light">
+              화염사</h3>
+            <p class="grey-text text-darken-3 col s12 centralize">
+              화염사는 심심한 분위기를 없애줄수는있는 분위기 메이커와 같은 포지션으로 여행의 재미를 플러스해주는 포지션입니다.</p>
+          </div>
+        </div>
+
+        <div class="col s4">
+          <%= image_tag('naksi.jpg', class:'image1')%>
+          <div class="icon-block">
+            <h3 class="center blue-text text-lighten-2 light">
+              낚시꾼</h3>
+            <p class="grey-text text-darken-3 col s12 centralize">
+              낚시꾼은 요리를 담당하는 포지션으로 김밥천국 아줌마정도의 실력을가지고있으면 포섭1순위인포지션입니다.</p>
+          </div>
+        </div>
+
+        <div class="col s4">
+          <%= image_tag('pado.jpg', class:'image1')%>
+          <div class="icon-block">
+            <h3 class="center blue-text text-lighten-2 light">파도잡이</h3>
+            <p class="grey-text text-darken-3 col s12 centralize">
+              파도잡이는 돈계산의 재능이 있는 자들이 많은 포지션으로 무한도전의 정총무와 같은포지션입니다.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<div class="empty-spacing"></div>
     <!--트립메이트방문자증가-->
     <div id="tm">
       <br></br>
@@ -78,13 +154,17 @@
           <div class="empty-spacing"></div>
           <h2 class="sow-headline">
             <span class="card-title">
-              여행의 T.O.P에서</h2>
+
+
+              <h2><u>여행의 T.O.P에서</u></h2>
+
           </span>
         </div>
       </div>
       <div class="empty-spacing"></div>
       <div class="empty-spacing"></div>
       <div class="empty-spacing"></div>
+
       <div class="tmsection">
         <div class="row">
           <div id="charoftm" class="col s12 centralize center">
@@ -109,7 +189,7 @@
                 </p>
               </div>
             </div>
-            <div class="col s9 m4 box-solution">
+            <div class="col s12 m4 box-solution">
               <i class="medium material-icons">location_city</i>
               <div class="icon-block">
                 <p class="grey-text text-darken-3 col s12 centralize">
@@ -123,9 +203,6 @@
         </div>
       </div>
       <div class="empty-spacing"></div>
-      <div class="empty-spacing"></div>
     </div>
 
-
-
-</body>
+  </body>
