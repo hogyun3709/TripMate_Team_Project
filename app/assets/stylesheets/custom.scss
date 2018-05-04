@@ -23,14 +23,19 @@ img.responsive-img-user {
 }
 
 //Chanhee
+.parallax {
+    /* The image used */
+    background-image: url("Firstimage 2.jpeg");
 
-#video-container
-{
-  width: 100%;
-  height: 700px;
-  overflow: hidden;
-  position: relative;
+    /* Set a specific height */
+    min-height: 1000px;
+    min-width: 100%;
 
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 video{

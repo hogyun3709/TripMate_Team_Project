@@ -7,33 +7,41 @@
     </head>
   </head>
   <body>
+
+    <!--Digitool main page-->
     <div id="head-main">
-      <!--동영상재생-->
-      <div id="video-container">
-        <%= video_tag "tripmm.mp4", :controls => true, :autobuffer => true, autoplay: :autoplay, loop: :loop, muted: true%>
-      </div>
+      <div class="parallax"></div>
       <div class="content">
         <h1>
-          <span class="card-title">함께 떠나고싶을땐 "여행의 T.O.P"</span>
+          <span class="card-title">Welcome to Digitool</span>
         </h1>
-        <p>지금 새로운 친구가 당신을 기다리고 있어요!</p>
+        <p>Start yout project</p>
         <div class="empty-spacing"></div>
         <div class="empty-spacing"></div>
 
         <%= link_to users_path, class:"semi-transparent-button hoverable" do %>
-        <strong>Let's get it</strong>
+        <strong>Join in</strong>
         <% end %>
       </div>
+      <!--Digitool Introduction -->
       <div class="empty-spacing"></div>
     </div>
     <div class="empty-spacing"></div>
     <div class="so-widget-sow-headline so-widget-sow-headline-default-0f5a0189729b">
       <div class="sow-headline-container ">
         <h1 class="sow-headline">
-          <span class="card-title"><u>ABOUT US</u></span>
+          <span class="card-title">
+            <u>ABOUT Digitool</u>
+          </span>
         </h1>
       </div>
     </div>
+    <div class="empty-spacing"></div>
+
+    <div style="height:auto;background-color:white:font-size:36px">
+      Scroll Up and Down this page to see the parallax scrolling effect. This div is just here to enable scrolling. Tip: Try to remove the background-attachment property to remove the scrolling effect.
+    </div>
+    <div class="empty-spacing"></div>
     <div class="empty-spacing"></div>
 
     <!---트립메이트의 3가지특성-------->
@@ -76,28 +84,36 @@
     <!--역할분담-->
     <div class="duty-container">
       <h1 class="sow-headline">
-        <span class="card-title"><u>T.O.P의 역할분담</u></span>
+        <span class="card-title">
+          <u>T.O.P의 역할분담</u>
+        </span>
       </h1>
-    <div class="empty-spacing"></div>
-    <div class="container">
-      <div class="row">
-        <div class="col s4">
-          <div class="icon-block">
-            <%= image_tag('giljob.jpg', class:'image1')%>
-            <h3 class="center blue-text text-lighten-2 light">
-              길잡이</h3>
-            <p class="grey-text text-darken-3 col s12 centralize">
-              길잡이는 여행에서 운전을 담당하고있는 포지션인데요, 운전면허가 필수조건인 포지션입니다.</p>
+      <div class="empty-spacing"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col s4">
+            <div class="icon-block">
+              <%= image_tag('giljob.jpg', class:'image1')%>
+              <h3 class="center blue-text text-lighten-2 light">
+                길잡이</h3>
+              <p class="grey-text text-darken-3 col s12 centralize">
+                길잡이는 여행에서 운전을 담당하고있는 포지션인데요, 운전면허가 필수조건인 포지션입니다.</p>
+            </div>
           </div>
-        </div>
 
-        <div class="col s4">
-          <div class="icon-block">
-            <%= image_tag('tamsak.jpg', class:'image1')%>
-            <h3 class="center blue-text text-lighten-2 light">
-              탐색꾼</h3>
-            <p class="grey-text text-darken-3 col s12 centralize">
-              탐색꾼은 말 그대로 탐색을 위한 포지션인데요. 매우 날렵한 몸놀림으로 여행의 가이드를맡는 포지션입니다.</p>
+          <div class="col s4">
+          <li class="collection-header">
+            <h5>Recent Project</h5>
+          </li>
+          <div class="collection">
+            <a href="#!" class="collection-item">Alvin</a>
+            <a href="#!" class="collection-item">Alvin</a>
+            <a href="#!" class="collection-item">Alvin</a>
+            <a href="#!" class="collection-item">Alvin</a>
+            <a href="#!" class="collection-item">Alvin</a>
+            <a href="#!" class="collection-item">Alvin</a>
+            <a href="#!" class="collection-item">Alvin</a>
+            <a href="#!" class="collection-item">Alvin</a>
           </div>
         </div>
 
@@ -113,96 +129,65 @@
 
       <div class="empty-spacing"></div>
 
-      <div class="row">
-        <div class="col s4">
-          <div class="icon-block">
-            <%= image_tag('fireman.jpg', class:'image1')%>
-            <h3 class="center blue-text text-lighten-2 light">
-              화염사</h3>
-            <p class="grey-text text-darken-3 col s12 centralize">
-              화염사는 심심한 분위기를 없애줄수는있는 분위기 메이커와 같은 포지션으로 여행의 재미를 플러스해주는 포지션입니다. 차에서 선곡능력이 최소 박명수급이여야합니다</p>
-          </div>
-        </div>
+      <div class="empty-spacing"></div>
 
-        <div class="col s4">
-          <%= image_tag('naksi.jpg', class:'image1')%>
-          <div class="icon-block">
-            <h3 class="center blue-text text-lighten-2 light">
-              낚시꾼</h3>
-            <p class="grey-text text-darken-3 col s12 centralize">
-              낚시꾼은 요리를 담당하는 포지션으로 김밥천국 아줌마정도의 실력을가지고있으면 포섭1순위인포지션입니다.</p>
-          </div>
-        </div>
+      <!--Digitool increase efffect-->
+      <div id="tm">
+        <br></br>
+        <div class="so-widget-sow-headline so-widget-sow-headline-default-0f5a0189729b">
+          <div class="sow-headline-container">
+            <div class="empty-spacing"></div>
+            <h2 class="sow-headline">
+              <span class="card-title">
 
-        <div class="col s4">
-          <%= image_tag('pado.jpg', class:'image1')%>
-          <div class="icon-block">
-            <h3 class="center blue-text text-lighten-2 light">파도잡이</h3>
-            <p class="grey-text text-darken-3 col s12 centralize">
-              파도잡이는 돈계산의 재능이 있는 자들이 많은 포지션으로 무한도전의 정총무와 같은포지션입니다.</p>
+                <h2>
+                  <u>In the Digitool</u>
+                </h2>
+
+              </span>
+            </div>
           </div>
-        </div>
-      </div>
-    </div>
-  </div>
-<div class="empty-spacing"></div>
-    <!--트립메이트방문자증가-->
-    <div id="tm">
-      <br></br>
-      <div class="so-widget-sow-headline so-widget-sow-headline-default-0f5a0189729b">
-        <div class="sow-headline-container">
           <div class="empty-spacing"></div>
-          <h2 class="sow-headline">
-            <span class="card-title">
+          <div class="empty-spacing"></div>
+          <div class="empty-spacing"></div>
 
-
-              <h2><u>여행의 T.O.P에서</u></h2>
-
-          </span>
-        </div>
-      </div>
-      <div class="empty-spacing"></div>
-      <div class="empty-spacing"></div>
-      <div class="empty-spacing"></div>
-
-      <div class="tmsection">
-        <div class="row">
-          <div id="charoftm" class="col s12 centralize center">
-            <div class="col s12 m4 box-solution">
-              <i class="medium material-icons">drive_eta</i>
-              <div class="icon-block">
-                <p class="grey-text text-darken-3 col s12 centralize">
-                  지금까지 여행한
-                  <span style="color: #FF0000;font-weight:bold;">장소 수</span>
-                  <div class="counter col s12" data-count="150">0</div>
-                </p>
-              </div>
-            </div>
-
-            <div class="col s12 m4 box-solution">
-              <i class="medium material-icons">directions_run</i>
-              <div class="icon-block">
-                <p class="grey-text text-darken-3 col s12 centralize">
-                  지금까지 여행한
-                  <span style="color: #FF0000;font-weight:bold;">사람 수</span>
-                  <div class="counter col s12" data-count="85">0</div>
-                </p>
-              </div>
-            </div>
-            <div class="col s12 m4 box-solution">
-              <i class="medium material-icons">location_city</i>
-              <div class="icon-block">
-                <p class="grey-text text-darken-3 col s12 centralize">
-                  지금까지의
-                  <span style="color: #FF0000;font-weight:bold;">여행지</span>
-                  <div class="counter col s12" data-count="200">0</div>
-                </p>
+          <div class="tmsection">
+            <div class="row">
+              <div id="charoftm" class="col s12 centralize center">
+                <div class="col s12 m4 box-solution">
+                  <i class="medium material-icons">drive_eta</i>
+                  <div class="icon-block">
+                    <p class="grey-text text-darken-3 col s12 centralize">
+                      지금까지 여행한
+                      <span style="color: #FF0000;font-weight:bold;">Project</span>
+                      <div class="counter col s12" data-count="150">0</div>
+                    </p>
+                  </div>
+                </div>
+                <div class="col s12 m4 box-solution">
+                  <i class="medium material-icons">directions_run</i>
+                  <div class="icon-block">
+                    <p class="grey-text text-darken-3 col s12 centralize">
+                      지금까지 여행한
+                      <span style="color: #FF0000;font-weight:bold;">d</span>
+                      <div class="counter col s12" data-count="85">0</div>
+                    </p>
+                  </div>
+                </div>
+                <div class="col s12 m4 box-solution">
+                  <i class="medium material-icons">location_city</i>
+                  <div class="icon-block">
+                    <p class="grey-text text-darken-3 col s12 centralize">
+                      지금까지의
+                      <span style="color: #FF0000;font-weight:bold;">joined</span>
+                      <div class="counter col s12" data-count="200">0</div>
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
+          <div class="empty-spacing"></div>
         </div>
-      </div>
-      <div class="empty-spacing"></div>
-    </div>
 
-  </body>
+      </body>
